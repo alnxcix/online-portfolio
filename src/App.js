@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+// import packages
+import { useState } from "react";
 
-function App() {
+// import custom components
+import About from "./components/About";
+import Education from "./components/Education";
+import Experiences from "./components/Experiences";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+
+// import assets
+import Avatar from "./assets/images/avatar.jfif";
+
+const App = () => {
+  const [activeBtn, setActiveBtn] = useState("About");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container pt-5">
+      <div className="justify-content-center row">
+        <div className="col-md-3">
+          <img src={Avatar} className="rounded-circle shadow-lg w-100 mb-3" />
+        </div>
+        <div className="col-md-6">
+          <div className="mb-3">
+            {["About", "Education", "Experiences", "Projects", "Skills"].map(
+              (e) => (
+                <button
+                  className={`btn rounded-pill me-1 px-3 shadow-none ${
+                    activeBtn === e ? "active-btn" : "inactive-btn"
+                  }`}
+                  onClick={() => setActiveBtn(e)}
+                >
+                  {e}
+                </button>
+              )
+            )}
+          </div>
+          <div className="card w-100">
+            <div className="card-body">
+              {activeBtn === "About" ? (
+                <About />
+              ) : activeBtn === "Education" ? (
+                <Education />
+              ) : activeBtn === "Experiences" ? (
+                <Experiences />
+              ) : activeBtn === "Projects" ? (
+                <Projects />
+              ) : (
+                <Skills />
+              )}
+            </div>
+          </div>
+          <p className="text-muted text-end">© royallennidoy</p>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
