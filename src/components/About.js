@@ -44,7 +44,7 @@ const About = () => (
         </p>
         <div className="row row-cols-1 row-cols-md-2 g-3">
           <div className="col">
-            <div className="card">
+            <div className="card rounded-pill">
               <div className="card-body">
                 <h5 className="card-title d-flex justify-content-between">
                   <div>
@@ -63,7 +63,7 @@ const About = () => (
             </div>
           </div>
           <div className="col">
-            <div className="card">
+            <div className="card rounded-pill">
               <div className="card-body">
                 <h5 className="card-title d-flex justify-content-between">
                   <div>

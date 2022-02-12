@@ -5,6 +5,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  background-image: linear-gradient(to right, #ffffff, #e5e5e5);
+}
+
 .active-btn {
   background-color: #14213d;
   color: #ffffff;

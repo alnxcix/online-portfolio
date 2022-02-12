@@ -17,7 +17,15 @@ const App = () => {
     <div className="container pt-5">
       <div className="justify-content-center row">
         <div className="col-md-3">
-          <img src={Avatar} className="rounded-circle shadow-lg w-100 mb-3" />
+          <img
+            src={Avatar}
+            className="rounded-circle w-100 mb-3"
+            style={{
+              borderStyle: "solid",
+              borderWidth: "15px",
+              borderColor: "#FCA311",
+            }}
+          />
         </div>
         <div className="col-md-6">
           <div className="mb-3">
@@ -34,7 +42,7 @@ const App = () => {
               )
             )}
           </div>
-          <div className="card w-100">
+          <div className="card w-100 rounded-3 shadow">
             <div className="card-body">
               {activeBtn === "About" ? (
                 <About />
