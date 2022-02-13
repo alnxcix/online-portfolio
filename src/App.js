@@ -31,11 +31,12 @@ const App = () => {
         <div className="col-md-6">
           <div className="mb-3">
             {["About", "Education", "Experiences", "Projects", "Skills"].map(
-              (e) => (
+              (e, i) => (
                 <button
                   className={`btn rounded-pill me-1 px-3 shadow-none ${
                     activeBtn === e ? "active-btn" : "inactive-btn"
                   }`}
+                  key={i}
                   onClick={() => setActiveBtn(e)}
                 >
                   {e}

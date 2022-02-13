@@ -7,9 +7,11 @@ const Skills = () => (
       <p className="text-muted">
         Languages, tools, and frameworks that I am most comfortable with.
       </p>
-      {["fa-html5", "fa-bootstrap", "fa-js", "fa-react", "fa-npm"].map((e) => (
-        <i className={`custom-icon fa-brands ${e} fa-3x me-4`} />
-      ))}
+      {["fa-html5", "fa-bootstrap", "fa-js", "fa-react", "fa-npm"].map(
+        (e, i) => (
+          <i className={`custom-icon fa-brands ${e} fa-3x me-4`} key={i} />
+        )
+      )}
       <hr />
     </div>
     <h2 className="fw-bold mb-3">
@@ -27,8 +29,8 @@ const Skills = () => (
         "fa-android",
         "fa-python",
         "fa-php",
-      ].map((e) => (
-        <i className={`custom-icon fa-brands ${e} fa-3x me-4`} />
+      ].map((e, i) => (
+        <i className={`custom-icon fa-brands ${e} fa-3x me-4`} key={i} />
       ))}
       <hr />
     </div>

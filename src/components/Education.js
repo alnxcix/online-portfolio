@@ -52,8 +52,8 @@ const Education = () => (
     </h2>
     <hr />
     <Suspense fallback={<div className="spinner-border" />}>
-      {timelineData.map((e) => (
-        <TimelineObject data={e} />
+      {timelineData.map((e, i) => (
+        <TimelineObject data={e} key={i} />
       ))}
     </Suspense>
   </>
