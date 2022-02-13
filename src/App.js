@@ -14,7 +14,7 @@ const Skills = lazy(() => import("./components/Skills"));
 const App = () => {
   const [activeBtn, setActiveBtn] = useState("About");
   return (
-    <div className="container pt-5">
+    <div className="container py-5">
       <div className="justify-content-center row">
         <div className="col-md-3">
           <img
@@ -43,7 +43,7 @@ const App = () => {
               )
             )}
           </div>
-          <div className="card w-100 rounded-3 shadow">
+          <div className="card rounded-3">
             <div className="card-body">
               {activeBtn === "About" ? (
                 <Suspense fallback={<div className="spinner-border" />}>
