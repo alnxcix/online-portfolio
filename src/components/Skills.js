@@ -1,7 +1,7 @@
 const Skills = () => (
   <>
     <h2 className="fw-bold">
-      👌 <span className="gradient">Proficient</span>
+      💯 <span className="gradient">Proficient</span>
     </h2>
     <div className="ms-5">
       <p className="text-muted">

@@ -18,12 +18,13 @@ const App = () => {
       <div className="justify-content-center row">
         <div className="col-md-3">
           <img
+            alt=""
             src={Avatar}
             className="rounded-circle w-100 mb-3"
             style={{
-              borderStyle: "solid",
-              borderWidth: "15px",
               borderColor: "#FCA311",
+              borderStyle: "solid",
+              borderWidth: "7px",
             }}
           />
         </div>
@@ -57,7 +58,6 @@ const App = () => {
               )}
             </div>
           </div>
-          <p className="text-muted text-end">© royallennidoy</p>
         </div>
       </div>
     </div>

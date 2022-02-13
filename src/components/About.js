@@ -46,7 +46,7 @@ const About = () => (
           <div className="col">
             <div className="card rounded-pill">
               <div className="card-body">
-                <h5 className="card-title d-flex justify-content-between">
+                <h6 className="card-title d-flex justify-content-between m-0">
                   <div>
                     <i className="fa-brands fa-linkedin" /> LinkedIn
                   </div>
@@ -58,14 +58,14 @@ const About = () => (
                       <i className="fa-solid fa-arrow-up-right-from-square" />
                     </a>
                   </div>
-                </h5>
+                </h6>
               </div>
             </div>
           </div>
           <div className="col">
             <div className="card rounded-pill">
               <div className="card-body">
-                <h5 className="card-title d-flex justify-content-between">
+                <h6 className="card-title d-flex justify-content-between m-0">
                   <div>
                     <i className="fa-brands fa-github" /> GitHub
                   </div>
@@ -77,7 +77,28 @@ const About = () => (
                       <i className="fa-solid fa-arrow-up-right-from-square" />
                     </a>
                   </div>
-                </h5>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card rounded-pill">
+              <div className="card-body">
+                <h6 className="card-title d-flex justify-content-between m-0">
+                  <div>
+                    <i className="fa-solid fa-file-lines" /> My resume
+                  </div>
+                  <div>
+                    <a
+                      href="resume.pdf"
+                      className="link-secondary"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i className="fa-solid fa-arrow-up-right-from-square" />
+                    </a>
+                  </div>
+                </h6>
               </div>
             </div>
           </div>
