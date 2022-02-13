@@ -37,9 +37,9 @@ body {
 .dot {
   background-image: linear-gradient(45deg, #14213d, #fca311);
   border-radius: 50%;
-  height: 20px;
+  height: 17px;
   position: absolute;
-  width: 20px;
+  width: 17px;
 }
 
 .external-link {
