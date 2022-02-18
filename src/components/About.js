@@ -1,3 +1,17 @@
+const otherLinks = [
+  {
+    title: "LinkedIn",
+    icon: "fa-brands fa-linkedin",
+    link: "https://linkedin.com/in/alnxcix",
+  },
+  {
+    title: "GitHub",
+    icon: "fa-brands fa-github",
+    link: "https://github.com/alnxcix",
+  },
+  { title: "Resume", icon: "fa-solid fa-file-lines", link: "/resume.pdf" },
+];
+
 const About = () => (
   <>
     <h2 className="fw-bold mb-3">
@@ -35,7 +49,7 @@ const About = () => (
         >
           <i className="fa-solid fa-phone" /> MOBILE
         </span>{" "}
-        +63 908 739 7998
+        (+63) 908 739 7998
       </p>
       <hr />
       <div style={{ color: "#14213D" }}>
@@ -43,65 +57,19 @@ const About = () => (
           <i className="fa-solid fa-link" /> Also, check out my other links:
         </p>
         <div className="row row-cols-1 row-cols-md-2 g-3">
-          <div className="col">
-            <div className="card rounded-pill">
-              <div className="card-body">
-                <h6 className="card-title d-flex justify-content-between m-0">
-                  <div>
-                    <i className="fa-brands fa-linkedin" /> LinkedIn
-                  </div>
-                  <div>
-                    <a
-                      href="https://linkedin.com/in/alnxcix"
-                      className="link-secondary"
-                    >
-                      <i className="fa-solid fa-arrow-up-right-from-square" />
-                    </a>
-                  </div>
-                </h6>
-              </div>
+          {otherLinks.map((e, i) => (
+            <div className="col" key={i}>
+              <a
+                class="btn btn-outline-secondary w-100 rounded-pill shadow-none"
+                href={e.link}
+                role="button"
+                target="_blank"
+                type="button"
+              >
+                <i className={e.icon} /> {e.title}
+              </a>
             </div>
-          </div>
-          <div className="col">
-            <div className="card rounded-pill">
-              <div className="card-body">
-                <h6 className="card-title d-flex justify-content-between m-0">
-                  <div>
-                    <i className="fa-brands fa-github" /> GitHub
-                  </div>
-                  <div>
-                    <a
-                      href="https://github.com/alnxcix"
-                      className="link-secondary"
-                    >
-                      <i className="fa-solid fa-arrow-up-right-from-square" />
-                    </a>
-                  </div>
-                </h6>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card rounded-pill">
-              <div className="card-body">
-                <h6 className="card-title d-flex justify-content-between m-0">
-                  <div>
-                    <i className="fa-solid fa-file-lines" /> My resume
-                  </div>
-                  <div>
-                    <a
-                      href="resume.pdf"
-                      className="link-secondary"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <i className="fa-solid fa-arrow-up-right-from-square" />
-                    </a>
-                  </div>
-                </h6>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
