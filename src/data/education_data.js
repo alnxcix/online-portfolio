@@ -1,8 +1,4 @@
-import { lazy, Suspense } from "react";
-
-const TimelineObject = lazy(() => import("./TimelineObject"));
-
-const timelineData = [
+export const education_data = [
   {
     startingYear: 2018,
     endingYear: 0,
@@ -11,7 +7,7 @@ const timelineData = [
       "University of Santo Tomas - College of Information and Computing Sciences",
     location: "Manila, Philippines",
     website: "https://www.ust.edu.ph/information-and-computing-sciences/",
-    course: "Bachelor of Science in Information Technology",
+    course: "BS Information Technology",
     awards: [
       "PHILNITS Passer 2021",
       "Dean's Lister (From A.Y. 2019 - 2020 1st Sem to A.Y. 2021 - 2022 1st Sem)",
@@ -44,19 +40,3 @@ const timelineData = [
     ],
   },
 ];
-
-const Education = () => (
-  <>
-    <h2 className="fw-bold m-0">
-      🎓 <span className="gradient">Education</span>
-    </h2>
-    <hr />
-    <Suspense fallback={<div className="spinner-border" />}>
-      {timelineData.map((e, i) => (
-        <TimelineObject data={e} key={i} />
-      ))}
-    </Suspense>
-  </>
-);
-
-export default Education;
