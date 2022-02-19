@@ -14,7 +14,7 @@ const About = () => (
     </h2>
     <div className="ms-5">
       <p>
-        I'm <strong style={{ color: "#FCA311" }}>Roy Allen Nidoy</strong>, a
+        I'm <strong className="gradient">Roy Allen Nidoy</strong>, a
         Philippine-based IT student and an aspiring frontend developer. Need
         something? Contact me and we'll talk it out.
       </p>
