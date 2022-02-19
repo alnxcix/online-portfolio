@@ -11,6 +11,6 @@ export const me = {
 
   // functions
   generateDescription: function () {
-    return `My name is ${this.name}, a full-time IT student and frontend developer from the Philippines. Need something? Contact me and we'll talk it out`;
+    return `I'm ${this.name}, a Philippine-based IT student and an aspiring frontend developer. Need something? Contact me and we'll talk it out.`;
   },
 };
