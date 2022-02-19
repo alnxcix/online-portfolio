@@ -1,16 +1,7 @@
-const otherLinks = [
-  {
-    title: "LinkedIn",
-    icon: "fa-brands fa-linkedin",
-    link: "https://linkedin.com/in/alnxcix",
-  },
-  {
-    title: "GitHub",
-    icon: "fa-brands fa-github",
-    link: "https://github.com/alnxcix",
-  },
-  { title: "Resume", icon: "fa-solid fa-file-lines", link: "/resume.pdf" },
-];
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { me } from "../data/me";
+import { otherLinks } from "../data/otherLinks";
 
 const About = () => (
   <>
@@ -18,43 +9,50 @@ const About = () => (
       🙋‍♂️ <span className="gradient">Hello there!</span>
     </h2>
     <div className="ms-5">
-      <p style={{ color: "#14213D" }}>
-        My name is <strong>Roy Allen Nidoy</strong>, a full-time IT student and
-        frontend developer from the Philippines. Need something? Contact me and
-        we'll talk it out.
-      </p>
+      <p>{me.generateDescription()}</p>
       <hr />
-      <p style={{ color: "#14213D" }}>
-        <span
-          className="badge rounded-pill"
-          style={{ backgroundColor: "#FCA311" }}
-        >
-          <i className="fa-solid fa-location-dot" /> LOCATION
-        </span>{" "}
-        Sampaloc, Manila
-      </p>
-      <p style={{ color: "#14213D" }}>
-        <span
-          className="badge rounded-pill"
-          style={{ backgroundColor: "#FCA311" }}
-        >
-          <i className="fa-solid fa-envelope" /> EMAIL
-        </span>{" "}
-        royallen.nidoy.iics@ust.edu.ph | allen.1120@icloud.com
-      </p>
-      <p style={{ color: "#14213D" }}>
-        <span
-          className="badge rounded-pill"
-          style={{ backgroundColor: "#FCA311" }}
-        >
-          <i className="fa-solid fa-phone" /> MOBILE
-        </span>{" "}
-        (+63) 908 739 7998
-      </p>
+      <div class="d-flex flex-wrap">
+        {[
+          {
+            label: "LOCATION",
+            value: me.location,
+          },
+          {
+            label: "EMAIL",
+            value: me.email,
+          },
+          {
+            label: "MOBILE",
+            value: me.mobile,
+          },
+          {
+            label: "RELIGIOUS AFFILIATION",
+            value: me.religiousAffiliation,
+          },
+          {
+            label: "GENDER",
+            value: me.gender,
+            smallValue: me.pronouns.join("/"),
+          },
+          {
+            label: "BIRTHDATE",
+            value: `${me.birthdate} ${me.starSign}`,
+          },
+        ].map((e, i) => (
+          <div key={i} className="w-50">
+            <small className="fw-bold" style={{ color: "#FCA311" }}>
+              {e.label}
+            </small>
+            <p>
+              {e.value} <small className="text-muted">{e.smallValue}</small>
+            </p>
+          </div>
+        ))}
+      </div>
       <hr />
-      <div style={{ color: "#14213D" }}>
-        <p className="lead">
-          <i className="fa-solid fa-link" /> Also, check out my other links:
+      <div>
+        <p>
+          <FontAwesomeIcon icon={faLink} /> Also, check out my other links:
         </p>
         <div className="row row-cols-1 row-cols-md-2 g-3">
           {otherLinks.map((e, i) => (
@@ -66,7 +64,7 @@ const About = () => (
                 target="_blank"
                 type="button"
               >
-                <i className={e.icon} /> {e.title}
+                <FontAwesomeIcon icon={e.icon} /> {e.title}
               </a>
             </div>
           ))}
