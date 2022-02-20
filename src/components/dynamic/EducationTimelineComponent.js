@@ -1,3 +1,4 @@
+// necessary imports
 import { faExternalLink, faLocation } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

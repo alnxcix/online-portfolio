@@ -1,3 +1,4 @@
+// necessary imports
 import { skills_high, skills_medium, skills_low } from "../../data/skills_data";
 
 const Skills = () => (

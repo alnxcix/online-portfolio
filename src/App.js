@@ -1,7 +1,5 @@
-// import packages
+// necessary imports
 import { lazy, Suspense, useState } from "react";
-
-// import assets
 import Avatar from "./assets/images/avatar.jfif";
 
 // lazy load components
@@ -44,29 +42,21 @@ const App = () => {
               )
             )}
           </div>
-          <div className="card rounded-3">
+          <div className="card rounded-3 w-100">
             <div className="card-body">
-              {activeBtn === "About" ? (
-                <Suspense fallback={<div className="spinner-border" />}>
+              <Suspense fallback={<div className="spinner-border" />}>
+                {activeBtn === "About" ? (
                   <About />
-                </Suspense>
-              ) : activeBtn === "Education" ? (
-                <Suspense fallback={<div className="spinner-border" />}>
+                ) : activeBtn === "Education" ? (
                   <Education />
-                </Suspense>
-              ) : activeBtn === "Experiences" ? (
-                <Suspense fallback={<div className="spinner-border" />}>
+                ) : activeBtn === "Experiences" ? (
                   <Experiences />
-                </Suspense>
-              ) : activeBtn === "Projects" ? (
-                <Suspense fallback={<div className="spinner-border" />}>
+                ) : activeBtn === "Projects" ? (
                   <Projects />
-                </Suspense>
-              ) : (
-                <Suspense fallback={<div className="spinner-border" />}>
+                ) : (
                   <Skills />
-                </Suspense>
-              )}
+                )}
+              </Suspense>
             </div>
           </div>
         </div>
