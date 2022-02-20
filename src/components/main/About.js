@@ -1,13 +1,17 @@
 // necessary imports
-import { about_links as links } from "../../data/about_links";
-import { about_main as main } from "../../data/about_main";
+import { about_links as links } from "data/about_links";
+import { about_main as main } from "data/about_main";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { lazy } from "react";
 
 // lazy load components
-const LinkComponent = lazy(() => import("../dynamic/AboutLinkComponent"));
-const DataComponent = lazy(() => import("../dynamic/AboutDataComponent"));
+const LinkComponent = lazy(() =>
+  import("components/dynamic/AboutLinkComponent")
+);
+const DataComponent = lazy(() =>
+  import("components/dynamic/AboutDataComponent")
+);
 
 const About = () => (
   <>

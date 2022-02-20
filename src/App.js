@@ -1,13 +1,13 @@
 // necessary imports
 import { lazy, Suspense, useState } from "react";
-import Avatar from "./assets/images/avatar.jfif";
+import Avatar from "assets/images/avatar.jfif";
 
 // lazy load components
-const About = lazy(() => import("./components/main/About"));
-const Education = lazy(() => import("./components/main/Education"));
-const Experiences = lazy(() => import("./components/main/Experiences"));
-const Projects = lazy(() => import("./components/main/Projects"));
-const Skills = lazy(() => import("./components/main/Skills"));
+const About = lazy(() => import("components/main/About"));
+const Education = lazy(() => import("components/main/Education"));
+const Experiences = lazy(() => import("components/main/Experiences"));
+const Projects = lazy(() => import("components/main/Projects"));
+const Skills = lazy(() => import("components/main/Skills"));
 
 const App = () => {
   const [activeBtn, setActiveBtn] = useState("About");
