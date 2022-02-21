@@ -1,6 +1,6 @@
 // necessary imports
 import { lazy, Suspense, useState } from "react";
-import Avatar from "assets/images/avatar.jfif";
+import Avatar from "assets/images/avatar.webp";
 
 // lazy load components
 const About = lazy(() => import("components/main/About"));
