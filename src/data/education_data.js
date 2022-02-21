@@ -1,5 +1,9 @@
+import DMMMSU from "assets/images/dmmmsu.webp";
+import UST from "assets/images/ust.webp";
+
 export const education_data = [
   {
+    logo: UST,
     startingYear: 2018,
     endingYear: 0,
     isOngoing: true,
@@ -14,6 +18,7 @@ export const education_data = [
     ],
   },
   {
+    logo: DMMMSU,
     startingYear: 2016,
     endingYear: 2018,
     isOngoing: false,
@@ -25,6 +30,7 @@ export const education_data = [
     awards: ["With Honors"],
   },
   {
+    logo: DMMMSU,
     startingYear: 2012,
     endingYear: 2016,
     isOngoing: false,
