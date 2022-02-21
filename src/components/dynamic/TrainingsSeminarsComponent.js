@@ -1,0 +1,1 @@
+const trainings_seminars_data
