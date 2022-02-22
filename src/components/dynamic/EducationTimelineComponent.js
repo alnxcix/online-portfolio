@@ -41,18 +41,16 @@ const EducationTimelineComponent = ({ data }) => (
               <small className="text-muted">
                 <FontAwesomeIcon icon={faLocation} /> {data.location}
               </small>
+              {data.awards.length > 0 ? (
+                <>
+                  <hr />
+                  <small className="text-muted">
+                    <strong>Awards:</strong>{" "}
+                    {data.awards.map((e) => e).join(", ")}
+                  </small>
+                </>
+              ) : null}
             </div>
-          </div>
-          <div>
-            {data.awards.length > 0 ? (
-              <>
-                <hr />
-                <small className="text-muted">
-                  <strong>Awards:</strong>{" "}
-                  {data.awards.map((e) => e).join(", ")}
-                </small>
-              </>
-            ) : null}
           </div>
         </div>
       </div>
