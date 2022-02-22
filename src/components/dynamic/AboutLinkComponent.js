@@ -8,6 +8,7 @@ const AboutLinkComponent = ({ data, i }) => (
       href={data.value}
       role="button"
       target="_blank"
+      rel="noreferrer"
     >
       <FontAwesomeIcon icon={data.icon} /> {data.title}
     </a>

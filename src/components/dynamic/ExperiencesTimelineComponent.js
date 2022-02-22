@@ -9,6 +9,7 @@ const ExperiencesTimelineComponent = ({ data }) => (
       <div className="card my-2 rounded-3 shadow">
         <div className="card-body d-flex">
           <img
+            alt=""
             className="me-3 rounded-circle shadow"
             src={data.logo}
             height="75"
@@ -25,7 +26,9 @@ const ExperiencesTimelineComponent = ({ data }) => (
                 <a
                   className="badge btn rounded-pill shadow-none external-link"
                   href={data.website}
+                  role="button"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Visit Website <FontAwesomeIcon icon={faExternalLink} />
                 </a>

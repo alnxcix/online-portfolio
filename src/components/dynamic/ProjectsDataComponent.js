@@ -4,6 +4,7 @@ const ProjectsDataComponent = ({ data }) => (
       <div className="card-body">
         <div className="d-flex">
           <img
+            alt=""
             className="align-self-center me-3 rounded-circle shadow"
             src={data.logo}
             height="60"
