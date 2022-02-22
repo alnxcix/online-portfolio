@@ -25,7 +25,7 @@ const About = () => (
         something? Contact me and we'll talk it out.
       </p>
       <hr />
-      <div class="d-flex flex-wrap">
+      <div className="d-flex flex-wrap">
         {main.map((e, i) => (
           <DataComponent data={e} i={i} />
         ))}
