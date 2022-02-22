@@ -2,6 +2,7 @@
 import { experiences_data as data } from "data/experiences_data";
 import { lazy } from "react";
 
+// lazy load components
 const TimelineComponent = lazy(() =>
   import("components/dynamic/ExperiencesTimelineComponent")
 );

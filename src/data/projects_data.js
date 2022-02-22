@@ -7,7 +7,7 @@ export const projects_data = [
     startingDate: "Feb. 2021",
     endingDate: "June 2021",
     description:
-      "Inventory management and POS in one desktop application. Made specifically for CHO Korean Mart..",
+      "Inventory management and POS in one desktop application. Made specifically for CHO Korean Mart.",
     technologyUsed: ["React", "Electron", "NeDB", "Bootstrap"],
     logo: CKM,
   },
