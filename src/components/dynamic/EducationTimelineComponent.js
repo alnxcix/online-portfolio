@@ -19,7 +19,8 @@ const EducationTimelineComponent = ({ data }) => (
               <div className="d-flex mb-1 justify-content-between">
                 <small className="font-monospace text-muted">
                   {data.startingYear} -{" "}
-                  {data.isOngoing ? "Present" : data.endingYear} | {data.course}
+                  {data.endingYear === null ? "Present" : data.endingYear} |{" "}
+                  {data.course}
                 </small>
                 <small>
                   <a

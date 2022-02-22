@@ -11,7 +11,8 @@ const ProjectsDataComponent = ({ data }) => (
           />
           <div>
             <small className="font-monospace text-muted">
-              {data.startDate} - {data.endingDate}
+              {data.startingDate} -{" "}
+              {data.endingDate === null ? "Present" : data.endingDate}
             </small>
             <h6 className="card-title">{data.title}</h6>
           </div>

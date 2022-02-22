@@ -18,7 +18,8 @@ const ExperiencesTimelineComponent = ({ data }) => (
             <div className="d-flex mb-1 justify-content-between">
               <small className="font-monospace text-muted">
                 {data.startingDate} -{" "}
-                {data.isOngoing ? "Present" : data.endingDate} | {data.position}
+                {data.endingDate === null ? "Present" : data.endingDate} |{" "}
+                {data.position}
               </small>
               <small>
                 <a

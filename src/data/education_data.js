@@ -5,8 +5,7 @@ export const education_data = [
   {
     logo: UST,
     startingYear: 2018,
-    endingYear: 0,
-    isOngoing: true,
+    endingYear: null,
     school:
       "University of Santo Tomas - College of Information and Computing Sciences",
     location: "Manila, Philippines",
@@ -21,7 +20,6 @@ export const education_data = [
     logo: DMMMSU,
     startingYear: 2016,
     endingYear: 2018,
-    isOngoing: false,
     school:
       "Don Mariano Marcos Memorial State University - South La Union Campus",
     location: "La Union, Philippines",
@@ -33,7 +31,6 @@ export const education_data = [
     logo: DMMMSU,
     startingYear: 2012,
     endingYear: 2016,
-    isOngoing: false,
     school:
       "Don Mariano Marcos Memorial State University - South La Union Campus",
     location: "La Union, Philippines",

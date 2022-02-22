@@ -5,8 +5,7 @@ export const experiences_data = [
   {
     logo: GSYNC,
     startingDate: "Jan. 2022",
-    endingDate: 0,
-    isOngoing: true,
+    endingDate: null,
     company: "GSync Solutions Philippines",
     location: "Naga, Philippines",
     website: "https://www.gsync.solutions/",
@@ -16,7 +15,6 @@ export const experiences_data = [
     logo: SITE,
     startingDate: "Sept. 2018",
     endingDate: "May 2019",
-    isOngoing: false,
     company: "SITE - Society of Information Technology Enthusiasts",
     location: "Manila, Philippines",
     website: "https://www.facebook.com/site.ust/",
