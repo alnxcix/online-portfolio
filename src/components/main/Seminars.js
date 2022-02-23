@@ -4,7 +4,7 @@ import { trainings_seminars_data as data } from "data/trainings_seminars_data";
 const Seminars = () => (
   <>
     <h2 className="fw-bold m-0 mb-3">
-      📢 <span className="gradient">Seminars</span>
+      📢 <span className="gradient">Seminars Attended</span>
     </h2>
     <table className="table">
       <thead>

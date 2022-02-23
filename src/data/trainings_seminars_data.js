@@ -31,8 +31,13 @@ export const trainings_seminars_data = [
         seminars: [
           {
             title:
-              "The Future of UI/UX Design Session 4: UI/UX Capability Developments and Growth in Sun Life Canada",
-            subtitle: "with Meenakshi Arora",
+              "The Future of UI/UX Design: What trends do we foresee in UI/UX in 2022 and beyond?",
+            subtitle: "with Aivy Torres",
+          },
+          {
+            title:
+              "The Future of UI/UX Design: Supply Chain and the User Experience",
+            subtitle: "with Brian Caoyonan",
           },
         ],
       },
