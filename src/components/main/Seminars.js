@@ -1,4 +1,5 @@
 // necessary imports
+import { Fragment } from "react";
 import { trainings_seminars_data as data } from "data/trainings_seminars_data";
 
 const Seminars = () => (
@@ -15,8 +16,8 @@ const Seminars = () => (
         </tr>
       </thead>
       <tbody>
-        {data.map((e) => (
-          <>
+        {data.map((e, i) => (
+          <Fragment key={i}>
             <tr>
               <th
                 className="gradient"
@@ -38,8 +39,8 @@ const Seminars = () => (
               </td>
             </tr>
             {e.months[0].seminars.length > 0
-              ? e.months[0].seminars.slice(1).map((e) => (
-                  <tr>
+              ? e.months[0].seminars.slice(1).map((e, i) => (
+                  <tr key={i}>
                     <td>
                       {e.title}{" "}
                       <small className="text-muted">{e.subtitle}</small>
@@ -48,8 +49,8 @@ const Seminars = () => (
                 ))
               : null}
             {e.months.length > 0
-              ? e.months.slice(1).map((e) => (
-                  <>
+              ? e.months.slice(1).map((e, i) => (
+                  <Fragment key={i}>
                     <tr>
                       <td className="fw-bold" rowSpan={e.seminars.length}>
                         {e.month}
@@ -62,8 +63,8 @@ const Seminars = () => (
                       </td>
                     </tr>
                     {e.seminars.length > 0
-                      ? e.seminars.slice(1).map((e) => (
-                          <tr>
+                      ? e.seminars.slice(1).map((e, i) => (
+                          <tr key={i}>
                             <td>
                               {e.title}{" "}
                               <small className="text-muted">{e.subtitle}</small>
@@ -71,10 +72,10 @@ const Seminars = () => (
                           </tr>
                         ))
                       : null}
-                  </>
+                  </Fragment>
                 ))
               : null}
-          </>
+          </Fragment>
         ))}
       </tbody>
     </table>

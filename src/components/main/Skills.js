@@ -1,4 +1,5 @@
 // necessary imports
+import { Fragment } from "react";
 import { skills_high, skills_medium, skills_low } from "data/skills_data";
 
 const Skills = () => (
@@ -11,9 +12,9 @@ const Skills = () => (
         Languages, tools, and frameworks that I am most comfortable with.
       </p>
       {skills_high.map((e, i) => (
-        <span key={i}>
+        <Fragment key={i}>
           <img alt="icon" className="mb-3" src={e} height="50" />{" "}
-        </span>
+        </Fragment>
       ))}
       <hr />
     </div>
@@ -25,9 +26,9 @@ const Skills = () => (
         Languages and tools that I also work (or used to work) with.
       </p>
       {skills_medium.map((e, i) => (
-        <span key={i}>
+        <Fragment key={i}>
           <img alt="icon" className="mb-3" src={e} height="50" />{" "}
-        </span>
+        </Fragment>
       ))}
       <hr />
     </div>
@@ -37,9 +38,9 @@ const Skills = () => (
     <div className="ms-5">
       <p className="text-muted">Tools on their way to the lists above.</p>
       {skills_low.map((e, i) => (
-        <span key={i}>
+        <Fragment key={i}>
           <img alt="icon" className="mb-3" src={e} height="50" />{" "}
-        </span>
+        </Fragment>
       ))}
     </div>
   </>

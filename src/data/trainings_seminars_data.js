@@ -39,6 +39,11 @@ export const trainings_seminars_data = [
               "The Future of UI/UX Design: Supply Chain and the User Experience",
             subtitle: "with Brian Caoyonan",
           },
+          {
+            title:
+              "The Future of UI/UX Design: How is UX transforming into CX?",
+            subtitle: "with Joel delos Reyes",
+          },
         ],
       },
     ],

@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { lazy } from "react";
 
 // lazy load components
-const LinkComponent = lazy(() =>
-  import("components/dynamic/AboutLinkComponent")
-);
 const DataComponent = lazy(() =>
   import("components/dynamic/AboutDataComponent")
+);
+const LinkComponent = lazy(() =>
+  import("components/dynamic/AboutLinkComponent")
 );
 
 const About = () => (
@@ -27,7 +27,7 @@ const About = () => (
       <hr />
       <div className="d-flex flex-wrap">
         {main.map((e, i) => (
-          <DataComponent data={e} i={i} />
+          <DataComponent data={e} key={i} />
         ))}
       </div>
       <hr />
@@ -37,7 +37,7 @@ const About = () => (
         </p>
         <div className="row row-cols-1 row-cols-md-2 g-3">
           {links.map((e, i) => (
-            <LinkComponent data={e} i={i} />
+            <LinkComponent data={e} key={i} />
           ))}
         </div>
       </div>
