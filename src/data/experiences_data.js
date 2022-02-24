@@ -7,7 +7,7 @@ export const experiences_data = [
     startingDate: "Jan. 2022",
     endingDate: null,
     company: "GSync Solutions Philippines",
-    location: "Naga, Philippines",
+    location: " Work From Home",
     website: "https://www.gsync.solutions/",
     position: "DevOps Intern",
   },
@@ -18,6 +18,6 @@ export const experiences_data = [
     company: "SITE - Society of Information Technology Enthusiasts",
     location: "Manila, Philippines",
     website: "https://www.facebook.com/site.ust/",
-    position: "Documentations Officer",
+    position: "Documentations Staff",
   },
 ];
