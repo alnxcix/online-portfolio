@@ -22,5 +22,7 @@ export const skills_medium = [
   mongodb,
   androidstudio,
   electron,
+  nextdotjs,
+  amazonaws,
 ];
-export const skills_low = [amazonaws, tailwindcss, nextdotjs];
+export const skills_low = [tailwindcss];

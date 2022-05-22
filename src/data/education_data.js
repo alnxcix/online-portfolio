@@ -12,8 +12,9 @@ export const education_data = [
     website: "https://www.ust.edu.ph/information-and-computing-sciences/",
     course: "BS Information Technology",
     awards: [
-      "PHILNITS Passer 2021",
-      "Dean's Lister (From A.Y. 2019 - 2020 1st Sem to A.Y. 2021 - 2022 1st Sem)",
+      "PhilNITS IT Passport Passer 2021 (Level 1)",
+      "Dean's Lister (From A.Y. 2019 - 2020 1st Sem to A.Y. 2021 - 2022 2nd Sem)",
+      "Best IT Capstone Project (2nd Place)",
     ],
   },
   {

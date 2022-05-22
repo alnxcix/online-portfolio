@@ -1,8 +1,22 @@
 // necessary imports
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const about_links = [
+  {
+    icon: faTwitter,
+    title: "Twitter",
+    value: "https://twitter.com/alnxcix",
+  },
+  {
+    icon: faInstagram,
+    title: "Instagram",
+    value: "https://www.instagram.com/alnxcix/",
+  },
   {
     icon: faLinkedin,
     title: "LinkedIn",
@@ -13,5 +27,4 @@ export const about_links = [
     title: "GitHub",
     value: "https://github.com/alnxcix",
   },
-  { icon: faDownload, title: "My Resume", value: "/resume.pdf" },
 ];

@@ -5,11 +5,11 @@ export const experiences_data = [
   {
     logo: GSYNC,
     startingDate: "Jan. 2022",
-    endingDate: null,
-    company: "GSync Solutions Philippines",
-    location: " Work From Home",
+    endingDate: "May 2022",
+    company: "DevKinetics Inc., under GSync Solutions Philippines",
+    location: "Work From Home",
     website: "https://www.gsync.solutions/",
-    position: "DevOps Intern",
+    position: "Intern (DevOps and Frontend)",
   },
   {
     logo: SITE,

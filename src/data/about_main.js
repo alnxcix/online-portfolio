@@ -12,10 +12,6 @@ export const about_main = [
     value: "(+63) 908 739 7998",
   },
   {
-    label: "RELIGIOUS AFFILIATION",
-    value: "Roman Catholic",
-  },
-  {
     label: "GENDER",
     value: "Male",
     smallValue: ["he", "him", "his"].join("/"),

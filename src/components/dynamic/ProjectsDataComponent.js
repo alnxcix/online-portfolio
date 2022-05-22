@@ -3,13 +3,15 @@ const ProjectsDataComponent = ({ data }) => (
     <div className="card rounded shadow">
       <div className="card-body">
         <div className="d-flex">
-          <img
-            alt=""
-            className="me-3 rounded-circle shadow"
-            src={data.logo}
-            height="60"
-            width="60"
-          />
+          {data.logo ? (
+            <img
+              alt=""
+              className="me-3 rounded-circle shadow"
+              src={data.logo}
+              height="60"
+              width="60"
+            />
+          ) : null}
           <div>
             <div className="mb-1">
               <small className="font-monospace text-muted">
@@ -25,7 +27,7 @@ const ProjectsDataComponent = ({ data }) => (
         <hr />
         <small className="text-muted">{data.description}</small>
         <div className="mt-3">
-          {data.technologyUsed.map((e) => (
+          {data.tags.map((e) => (
             <span className="badge border border-dark rounded-pill bg-light text-dark mb-1 me-1">
               {e}
             </span>
