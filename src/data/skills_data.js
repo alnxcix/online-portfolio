@@ -21,6 +21,7 @@ export const skills_high = [
   { label: "JavaScript", logo: javascript },
   { label: "Bootstrap", logo: bootstrap },
   { label: "React", logo: react },
+  { label: "Next", logo: nextdotjs },
 ];
 export const skills_medium = [
   { label: "Java", logo: java },
@@ -29,7 +30,6 @@ export const skills_medium = [
   { label: "MongoDB", logo: mongodb },
   { label: "Android Studio", logo: androidstudio },
   { label: "Electron", logo: electron },
-  { label: "Next", logo: nextdotjs },
   { label: "Amazon AWS", logo: amazonaws },
 ];
 export const skills_low = [{ label: "Tailwind", logo: tailwindcss }];

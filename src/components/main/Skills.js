@@ -14,7 +14,7 @@ const Skills = () => (
       </p>
       {skills_high.map((e, i) => (
         <img
-          alt={e.label}
+          alt=""
           className="mb-3 me-2"
           data-tip={e.label}
           height="50"
@@ -33,7 +33,7 @@ const Skills = () => (
       </p>
       {skills_medium.map((e, i) => (
         <img
-          alt={e.label}
+          alt=""
           className="mb-3 me-2"
           data-tip={e.label}
           height="50"
@@ -50,7 +50,7 @@ const Skills = () => (
       <p className="text-muted">Tools on their way to the lists above.</p>
       {skills_low.map((e, i) => (
         <img
-          alt={e.label}
+          alt=""
           className="mb-3 me-3"
           data-tip={e.label}
           height="50"

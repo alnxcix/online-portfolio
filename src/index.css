@@ -19,7 +19,7 @@ body {
   height: 100vh;
 }
 
-.active-btn {
+.btn-active {
   background-color: #fca311;
   color: #14213d;
 }
@@ -51,13 +51,18 @@ body {
   background-color: #fca311;
 }
 
-.gradient,
-.inactive-btn {
+.footer {
+  background-color: #fca311;
   color: #14213d;
 }
 
-.inactive-btn:hover,
-.active-btn:hover {
+.gradient,
+.btn-inactive {
+  color: #14213d;
+}
+
+.btn-inactive:hover,
+.btn-active:hover {
   background-color: #e5e5e5;
 }
 

@@ -5,15 +5,15 @@ export const education_data = [
   {
     logo: UST,
     startingYear: 2018,
-    endingYear: null,
+    endingYear: 2022,
     school:
       "University of Santo Tomas - College of Information and Computing Sciences",
     location: "Manila, Philippines",
     website: "https://www.ust.edu.ph/information-and-computing-sciences/",
     course: "BS Information Technology",
     awards: [
-      "PhilNITS IT Passport Passer 2021 (Level 1)",
-      "Dean's Lister (From A.Y. 2019 - 2020 1st Sem to A.Y. 2021 - 2022 2nd Sem)",
+      "PhilNITS IT Passport (Level 1)",
+      "Dean's Lister (A.Y. 2019 - 2020 to A.Y. 2021 - 2022)",
       "Best IT Capstone Project (2nd Place)",
     ],
   },

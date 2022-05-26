@@ -22,7 +22,7 @@ const About = () => (
       <p>
         I'm <strong className="gradient">Roy Allen Nidoy</strong>, a
         Philippine-based IT student and an aspiring frontend developer. Need
-        something? Contact me and we'll talk it out.
+        help on web development stuffs? Contact me and I'll gladly help you.
       </p>
       <hr />
       <div className="d-flex flex-wrap">
@@ -35,7 +35,7 @@ const About = () => (
         <p>
           <FontAwesomeIcon icon={faLink} /> Also, check out my other links:
         </p>
-        <div className="row row-cols-1 row-cols-md-2 g-3">
+        <div className="row row-cols-2 g-3">
           {links.map((e, i) => (
             <LinkComponent data={e} key={i} />
           ))}

@@ -3,6 +3,15 @@ import Nabi from "assets/images/nabi.webp";
 
 export const projects_data = [
   {
+    title: "Ligtas PH",
+    startingDate: "Nov. 2020",
+    endingDate: "Nov. 2020",
+    description:
+      "Developed as an entry for a hackathon contest back in 2020. This is a system that eases the process of finding and getting updates on nearby evacuation centers.",
+    tags: ["MEAN", "MongoDB", "Express", "Angular", "Node"],
+    logo: null,
+  },
+  {
     title: "CHO Korean Mart: Inventory Management App & POS",
     startingDate: "Feb. 2021",
     endingDate: "June 2021",
@@ -12,21 +21,12 @@ export const projects_data = [
     logo: CKM,
   },
   {
-    title: "Ligtas PH",
-    startingDate: "Nov. 2020",
-    endingDate: "Nov. 2020",
-    description:
-      "Developed as an entry for a hackathon contest back in 2020. This is a system that eases the process of finding and getting updates on nearby evacuation centers.",
-    tags: ["MongoDB", "Express", "Angular", "Node"],
-    logo: null,
-  },
-  {
     title: "Nabi",
     startingDate: "Aug. 2021",
     endingDate: "Dec. 2021",
     description:
       "Capstone project for my undergrad program. A progressive web application focusing on mental wellness. Developed in coordination with the Philippine-based Youth for Mental Health Coalition.",
-    tags: ["MongoDB", "Express", "React", "Node"],
+    tags: ["MERN", "MongoDB", "Express", "React", "Node"],
     logo: Nabi,
   },
   {

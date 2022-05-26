@@ -1,5 +1,7 @@
 // necessary imports
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
+import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Avatar from "assets/images/avatar.webp";
 
 // lazy load components
@@ -11,55 +13,107 @@ const Skills = lazy(() => import("components/main/Skills"));
 
 const App = () => {
   const [activeBtn, setActiveBtn] = useState("About");
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => {
+        if (window.innerWidth < 768 !== isMobile)
+          setIsMobile(window.innerWidth < 768);
+      },
+      false
+    );
+  }, [isMobile]);
   return (
-    <div className="container py-5">
-      <div className="justify-content-center row">
-        <div className="col-md-3">
-          <img
-            alt=""
-            src={Avatar}
-            className="rounded-circle w-100 mb-3"
-            style={{
-              borderColor: "#FCA311",
-              borderStyle: "solid",
-              borderWidth: "7px",
-            }}
-          />
-        </div>
-        <div className="col-md-7">
-          <div className="mb-3">
-            {["About", "Education", "Experiences", "Projects", "Skills"].map(
-              (e, i) => (
-                <button
-                  className={`btn rounded-pill me-1 px-3 shadow-none ${
-                    activeBtn === e ? "active-btn" : "inactive-btn"
-                  }`}
-                  key={i}
-                  onClick={() => setActiveBtn(e)}
-                >
-                  {e}
-                </button>
-              )
-            )}
+    <div className="d-flex flex-column" style={{ minHeight: "100vh" }}>
+      <div className="flex-grow-1 container py-5">
+        <div className="justify-content-center row">
+          <div className="col-5 col-md-2">
+            <img
+              alt=""
+              src={Avatar}
+              className="rounded-circle w-100 mb-3"
+              style={{
+                borderColor: "#FCA311",
+                borderStyle: "solid",
+                borderWidth: "7px",
+              }}
+            />
           </div>
-          <div className="card rounded-3 w-100">
-            <div className="card-body">
-              <Suspense fallback={<div className="spinner-border" />}>
-                {activeBtn === "About" ? (
-                  <About />
-                ) : activeBtn === "Education" ? (
-                  <Education />
-                ) : activeBtn === "Experiences" ? (
-                  <Experiences />
-                ) : activeBtn === "Projects" ? (
-                  <Projects />
-                ) : (
-                  <Skills />
-                )}
-              </Suspense>
+          <div className="col-md-7">
+            {isMobile ? (
+              <div className="dropdown">
+                <button
+                  className="btn-active btn dropdown-toggle mb-3 px-3 rounded-pill shadow-none"
+                  data-bs-toggle="dropdown"
+                >
+                  {activeBtn}
+                </button>
+                <ul className="dropdown-menu">
+                  {[
+                    "About",
+                    "Education",
+                    "Experiences",
+                    "Projects",
+                    "Skills",
+                  ].map((e, i) => (
+                    <li key={i}>
+                      <button
+                        className="dropdown-item"
+                        onClick={() => setActiveBtn(e)}
+                      >
+                        {e}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : (
+              <div className="mb-3">
+                {[
+                  "About",
+                  "Education",
+                  "Experiences",
+                  "Projects",
+                  "Skills",
+                ].map((e, i) => (
+                  <button
+                    className={`btn rounded-pill me-1 px-3 shadow-none ${
+                      activeBtn === e ? "btn-active" : "btn-inactive"
+                    }`}
+                    key={i}
+                    onClick={() => setActiveBtn(e)}
+                  >
+                    {e}
+                  </button>
+                ))}
+              </div>
+            )}
+
+            <div className="card rounded-3 w-100">
+              <div className="card-body">
+                <Suspense fallback={<div className="spinner-border" />}>
+                  {activeBtn === "About" ? (
+                    <About />
+                  ) : activeBtn === "Education" ? (
+                    <Education />
+                  ) : activeBtn === "Experiences" ? (
+                    <Experiences />
+                  ) : activeBtn === "Projects" ? (
+                    <Projects />
+                  ) : (
+                    <Skills />
+                  )}
+                </Suspense>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="align-items-center d-flex footer justify-content-between p-3">
+        <small className="m-0">
+          <FontAwesomeIcon icon={faCopyright} /> Copyright 2022 Roy Allen Nidoy
+        </small>
       </div>
     </div>
   );
