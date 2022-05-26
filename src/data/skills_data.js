@@ -14,15 +14,22 @@ import nodedotjs from "assets/svg/nodedotjs.svg";
 import react from "assets/svg/react.svg";
 import tailwindcss from "assets/svg/tailwindcss.svg";
 
-export const skills_high = [html5, css3, javascript, bootstrap, react];
-export const skills_medium = [
-  java,
-  git,
-  nodedotjs,
-  mongodb,
-  androidstudio,
-  electron,
-  nextdotjs,
-  amazonaws,
+// export const skills_high = [html5, css3, javascript, bootstrap, react];
+export const skills_high = [
+  { label: "HTML", logo: html5 },
+  { label: "CSS", logo: css3 },
+  { label: "JavaScript", logo: javascript },
+  { label: "Bootstrap", logo: bootstrap },
+  { label: "React", logo: react },
 ];
-export const skills_low = [tailwindcss];
+export const skills_medium = [
+  { label: "Java", logo: java },
+  { label: "Git", logo: git },
+  { label: "Node", logo: nodedotjs },
+  { label: "MongoDB", logo: mongodb },
+  { label: "Android Studio", logo: androidstudio },
+  { label: "Electron", logo: electron },
+  { label: "Next", logo: nextdotjs },
+  { label: "Amazon AWS", logo: amazonaws },
+];
+export const skills_low = [{ label: "Tailwind", logo: tailwindcss }];

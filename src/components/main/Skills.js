@@ -1,9 +1,10 @@
 // necessary imports
-import { Fragment } from "react";
 import { skills_high, skills_medium, skills_low } from "data/skills_data";
+import ReactTooltip from "react-tooltip";
 
 const Skills = () => (
   <>
+    <ReactTooltip effect="solid" />
     <h2 className="fw-bold">
       💯 <span className="gradient">Proficient</span>
     </h2>
@@ -12,9 +13,14 @@ const Skills = () => (
         Languages, tools, and frameworks that I am most comfortable with.
       </p>
       {skills_high.map((e, i) => (
-        <Fragment key={i}>
-          <img alt="icon" className="mb-3" src={e} height="50" />{" "}
-        </Fragment>
+        <img
+          alt={e.label}
+          className="mb-3 me-2"
+          data-tip={e.label}
+          height="50"
+          key={i}
+          src={e.logo}
+        />
       ))}
       <hr />
     </div>
@@ -26,9 +32,14 @@ const Skills = () => (
         Languages and tools that I also work (or used to work) with.
       </p>
       {skills_medium.map((e, i) => (
-        <Fragment key={i}>
-          <img alt="icon" className="mb-3" src={e} height="50" />{" "}
-        </Fragment>
+        <img
+          alt={e.label}
+          className="mb-3 me-2"
+          data-tip={e.label}
+          height="50"
+          key={i}
+          src={e.logo}
+        />
       ))}
       <hr />
     </div>
@@ -38,9 +49,14 @@ const Skills = () => (
     <div className="ms-5">
       <p className="text-muted">Tools on their way to the lists above.</p>
       {skills_low.map((e, i) => (
-        <Fragment key={i}>
-          <img alt="icon" className="mb-3" src={e} height="50" />{" "}
-        </Fragment>
+        <img
+          alt={e.label}
+          className="mb-3 me-3"
+          data-tip={e.label}
+          height="50"
+          key={i}
+          src={e.logo}
+        />
       ))}
     </div>
   </>
