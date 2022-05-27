@@ -1,4 +1,3 @@
-// necessary imports
 import {
   faGithub,
   faInstagram,

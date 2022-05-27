@@ -1,4 +1,3 @@
-// necessary imports
 import amazonaws from "assets/svg/amazonaws.svg";
 import androidstudio from "assets/svg/androidstudio.svg";
 import bootstrap from "assets/svg/bootstrap.svg";
@@ -14,7 +13,6 @@ import nodedotjs from "assets/svg/nodedotjs.svg";
 import react from "assets/svg/react.svg";
 import tailwindcss from "assets/svg/tailwindcss.svg";
 
-// export const skills_high = [html5, css3, javascript, bootstrap, react];
 export const skills_high = [
   { label: "HTML", logo: html5 },
   { label: "CSS", logo: css3 },

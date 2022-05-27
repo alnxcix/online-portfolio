@@ -1,10 +1,8 @@
-// necessary imports
 import { lazy, Suspense, useEffect, useState } from "react";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Avatar from "assets/images/avatar.webp";
 
-// lazy load components
 const About = lazy(() => import("components/main/About"));
 const Education = lazy(() => import("components/main/Education"));
 const Experiences = lazy(() => import("components/main/Experiences"));
@@ -18,6 +16,7 @@ const App = () => {
     window.addEventListener(
       "resize",
       () => {
+        // eslint-disable-next-line no-mixed-operators
         if (window.innerWidth < 768 !== isMobile)
           setIsMobile(window.innerWidth < 768);
       },
@@ -78,8 +77,8 @@ const App = () => {
                   "Skills",
                 ].map((e, i) => (
                   <button
-                    className={`btn rounded-pill me-1 px-3 shadow-none ${
-                      activeBtn === e ? "btn-active" : "btn-inactive"
+                    className={`btn btn-default rounded-pill me-1 px-3 shadow-none ${
+                      activeBtn === e ? "btn-active" : null
                     }`}
                     key={i}
                     onClick={() => setActiveBtn(e)}

@@ -21,17 +21,15 @@ body {
 
 .btn-active {
   background-color: #fca311;
+}
+
+.btn-default {
   color: #14213d;
 }
 
-.custom-icon {
-  color: #14213d;
-  opacity: 0.5;
-  transition-duration: 0.3s;
-}
-
-.custom-icon:hover {
-  opacity: 1;
+.btn-active:hover,
+.btn-default:hover {
+  background-color: #e5e5e5;
 }
 
 .dot {
@@ -56,14 +54,8 @@ body {
   color: #14213d;
 }
 
-.gradient,
-.btn-inactive {
+.gradient {
   color: #14213d;
-}
-
-.btn-inactive:hover,
-.btn-active:hover {
-  background-color: #e5e5e5;
 }
 
 /* gradient text for modern browsers */

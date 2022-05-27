@@ -1,6 +1,5 @@
-// necessary imports
-import { education_data as data } from "data/education_data";
 import { lazy } from "react";
+import { education_data as data } from "data/education_data";
 
 const TimelineComponent = lazy(() =>
   import("components/dynamic/EducationTimelineComponent")

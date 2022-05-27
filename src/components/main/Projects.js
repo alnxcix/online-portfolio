@@ -1,8 +1,6 @@
-// necessary imports
 import { lazy } from "react";
 import { projects_data as data } from "data/projects_data";
 
-// lazy load components
 const ProjectsDataComponent = lazy(() =>
   import("components/dynamic/ProjectsDataComponent")
 );

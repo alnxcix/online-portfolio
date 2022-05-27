@@ -1,4 +1,3 @@
-// necessary imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const AboutLinkComponent = ({ data }) => (

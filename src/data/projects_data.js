@@ -1,5 +1,5 @@
-import CKM from "assets/images/cho-korean-mart.webp";
-import Nabi from "assets/images/nabi.webp";
+import ckm from "assets/images/cho-korean-mart.webp";
+import nabi from "assets/images/nabi.webp";
 
 export const projects_data = [
   {
@@ -18,7 +18,7 @@ export const projects_data = [
     description:
       "Client-based project for my Software Engineering course. This is an inventory management and POS in one standalone desktop application. Developed for CHO Korean Mart.",
     tags: ["React", "Electron", "NeDB"],
-    logo: CKM,
+    logo: ckm,
   },
   {
     title: "Nabi",
@@ -27,7 +27,7 @@ export const projects_data = [
     description:
       "Capstone project for my undergrad program. A progressive web application focusing on mental wellness. Developed in coordination with the Philippine-based Youth for Mental Health Coalition.",
     tags: ["MERN", "MongoDB", "Express", "React", "Node"],
-    logo: Nabi,
+    logo: nabi,
   },
   {
     title: "DriveSmart KYCv2",
