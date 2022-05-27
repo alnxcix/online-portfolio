@@ -1,7 +1,9 @@
 import { lazy, Suspense, useEffect, useState } from "react";
-import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Avatar from "assets/images/avatar.webp";
+import ModalImage from "react-modal-image";
+import AvatarLarge from "assets/images/avatar-lg.webp";
+import AvatarSmall from "assets/images/avatar-sm.webp";
 
 const About = lazy(() => import("components/main/About"));
 const Education = lazy(() => import("components/main/Education"));
@@ -28,15 +30,13 @@ const App = () => {
       <div className="flex-grow-1 container py-5">
         <div className="justify-content-center row">
           <div className="col-5 col-md-2">
-            <img
-              alt=""
-              src={Avatar}
-              className="rounded-circle w-100 mb-3"
-              style={{
-                borderColor: "#FCA311",
-                borderStyle: "solid",
-                borderWidth: "7px",
-              }}
+            <ModalImage
+              alt="That's me! 😀"
+              className="rounded-circle w-100 mb-3 shadow"
+              hideDownload
+              hideZoom
+              large={AvatarLarge}
+              small={AvatarSmall}
             />
           </div>
           <div className="col-md-7">
