@@ -31,7 +31,7 @@ const App = () => {
         <div className="justify-content-center row">
           <div className="col-5 col-md-2">
             <ModalImage
-              alt="That's me! 😀"
+              alt="It's me! 😀"
               className="rounded-circle w-100 mb-3 shadow"
               hideDownload
               hideZoom
