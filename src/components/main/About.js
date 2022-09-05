@@ -19,9 +19,8 @@ const About = () => (
     <div className="ms-5">
       <p>
         I'm <strong className="gradient">Roy Allen Nidoy</strong>, a software
-        engineer based in Manila, Philippines. I mostly do some Frontend stuffs,
-        so if you need help regarding that, you can contact me and we can
-        discuss it.
+        engineer based in Manila, Philippines. I mostly do Frontend stuffs, so
+        if you need help with that, you can contact me and we can discuss it.
       </p>
       <p>
         My other hobbies? I like consuming media, especially fictional novels
