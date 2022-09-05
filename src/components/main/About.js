@@ -19,12 +19,13 @@ const About = () => (
     <div className="ms-5">
       <p>
         I'm <strong className="gradient">Roy Allen Nidoy</strong>, a software
-        engineer based in Manila, Philippines. I mostly do Frontend stuffs, so
-        if you need help with that, you can contact me and we can discuss it.
+        engineer based in Manila, Philippines. I mostly do Frontend stuffs using
+        React, so if you need help with that, you can contact me and we can
+        discuss it.
       </p>
       <p>
-        My other hobbies? I like consuming media, especially fictional novels
-        and video games.
+        When I'm not coding, I entertain myself through playing video games and,
+        sometimes, reading fictional novels.
       </p>
       <hr />
       <div className="d-flex flex-wrap">

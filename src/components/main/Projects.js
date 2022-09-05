@@ -13,7 +13,8 @@ const Projects = () => (
       <div className="flex-grow-1 border-bottom mb-3 pb-3">
         <h2 className="fw-bold gradient">Academic Projects</h2>
         <p className="text-muted">
-          Client-based projects that I have developed for academic purposes.
+          Client-based projects that I have developed as part of my academic
+          requirements.
         </p>
         <div className="row row-cols-1 row-cols-lg-2 g-3">
           {data1.map((e, i) => (
@@ -27,8 +28,7 @@ const Projects = () => (
       <div className="flex-grow-1">
         <h2 className="fw-bold gradient">Personal Projects</h2>
         <p className="text-muted">
-          These are the projects that I have worked on during my personal free
-          time.
+          Projects that I worked on during my personal free time.
         </p>
         <div className="row row-cols-1 row-cols-lg-2 g-3">
           {data2.map((e, i) => (
