@@ -11,10 +11,10 @@ export const education_data = [
     location: "Manila, Philippines",
     website: "https://www.ust.edu.ph/information-and-computing-sciences/",
     course: "BS Information Technology",
-    awards: [
-      "PhilNITS IT Passport (Level 1)",
-      "Dean's Lister (A.Y. 2019 - 2020 to A.Y. 2021 - 2022)",
-      "Best IT Capstone Project (2nd Place)",
+    achievements: [
+      "Graduated Cum Laude",
+      "Dean's Lister (2nd year to 4th year)",
+      "Best IT Capstone Project - Web and Mobile App Development (1st Runner Up)",
     ],
   },
   {
@@ -25,22 +25,7 @@ export const education_data = [
       "Don Mariano Marcos Memorial State University - South La Union Campus",
     location: "La Union, Philippines",
     website: "https://www.dmmmsu.edu.ph/category/sluc/",
-    course: "Senior High School (STEM)",
-    awards: ["With Honors"],
-  },
-  {
-    logo: dmmmsu,
-    startingYear: 2012,
-    endingYear: 2016,
-    school:
-      "Don Mariano Marcos Memorial State University - South La Union Campus",
-    location: "La Union, Philippines",
-    website: "https://www.dmmmsu.edu.ph/category/sluc/",
-    course: "Junior High School",
-    awards: [
-      "Exemplary Performance in NCAE",
-      "Journalism Award",
-      "With Honors",
-    ],
+    course: "JHS and SHS (STEM)",
+    achievements: ["Graduated with Honors", "Exemplary Performance in NCAE"],
   },
 ];

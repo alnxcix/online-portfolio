@@ -13,14 +13,14 @@ const Skills = lazy(() => import("components/main/Skills"));
 
 const App = () => {
   const [activeBtn, setActiveBtn] = useState("About");
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
   useEffect(() => {
     window.addEventListener(
       "resize",
       () => {
         // eslint-disable-next-line no-mixed-operators
-        if (window.innerWidth < 768 !== isMobile)
-          setIsMobile(window.innerWidth < 768);
+        if (window.innerWidth < 992 !== isMobile)
+          setIsMobile(window.innerWidth < 992);
       },
       false
     );

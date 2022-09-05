@@ -1,15 +1,16 @@
 import ckm from "assets/images/cho-korean-mart.webp";
 import nabi from "assets/images/nabi.webp";
 
-export const projects_data = [
+export const academic_projects_data = [
   {
-    title: "Ligtas PH",
-    startingDate: "Nov. 2020",
-    endingDate: "Nov. 2020",
+    title: "Nabi",
+    startingDate: "Aug. 2021",
+    endingDate: "Dec. 2021",
     description:
-      "Developed as an entry for a hackathon contest back in 2020. This is a system that eases the process of finding and getting updates on nearby evacuation centers.",
-    tags: ["MEAN", "MongoDB", "Express", "Angular", "Node"],
-    logo: null,
+      "Capstone project for my undergrad program. A progressive web application focusing on mental wellness. Developed in coordination with the Youth for Mental Health Coalition, a Philippine-based NGO.",
+    tags: ["MERN", "MongoDB", "Express", "React", "Node"],
+    logo: nabi,
+    link: null,
   },
   {
     title: "CHO Korean Mart: Inventory Management App & POS",
@@ -19,23 +20,28 @@ export const projects_data = [
       "Client-based project for my Software Engineering course. This is an inventory management and POS in one standalone desktop application. Developed for CHO Korean Mart.",
     tags: ["React", "Electron", "NeDB"],
     logo: ckm,
+    link: null,
   },
+];
+
+export const personal_projects_data = [
   {
-    title: "Nabi",
-    startingDate: "Aug. 2021",
-    endingDate: "Dec. 2021",
-    description:
-      "Capstone project for my undergrad program. A progressive web application focusing on mental wellness. Developed in coordination with the Philippine-based Youth for Mental Health Coalition.",
-    tags: ["MERN", "MongoDB", "Express", "React", "Node"],
-    logo: nabi,
-  },
-  {
-    title: "DriveSmart KYCv2",
-    startingDate: "Feb. 2022",
-    endingDate: "May 2022",
-    description:
-      "A project I took part in during my undergrad internship training program. This is a KYC system for EasyLearn, an online platform for student drivers to learn ODEP and OTDC.",
-    tags: ["React", "Next", "Node", "AWS"],
+    title: "Wordle Clone",
+    startingDate: null,
+    endingDate: null,
+    description: "A clone of the famous game Wordle. Built entirely on React.",
+    tags: ["React"],
     logo: null,
+    link: "https://alnxcix.github.io/react-wordle/",
+  },
+  {
+    title: "PokéDex",
+    startingDate: null,
+    endingDate: null,
+    description:
+      "Standard PokéDex app that displays a list of Pokémons, their typings, abilities, and stats. Built using React and uses PokéAPI to fetch information.",
+    tags: ["React", "PokéAPI"],
+    logo: null,
+    link: "https://alnxcix.github.io/react-pokedex/",
   },
 ];

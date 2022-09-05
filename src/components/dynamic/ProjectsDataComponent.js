@@ -1,3 +1,6 @@
+import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const ProjectsDataComponent = ({ data }) => (
   <div className="col">
     <div className="card rounded shadow">
@@ -12,15 +15,27 @@ const ProjectsDataComponent = ({ data }) => (
               width="60"
             />
           ) : null}
-          <div>
+          <div className="flex-grow-1">
             <div className="mb-1">
               <small className="font-monospace text-muted">
-                {data.startingDate} -{" "}
-                {data.endingDate === null ? "Present" : data.endingDate}
+                {data.startingDate === null || data.endingDate === null
+                  ? null
+                  : `${data.startingDate} - ${data.endingDate}`}
               </small>
             </div>
-            <div className="mb-1">
+            <div className="align-items-center d-flex justify-content-between mb-1">
               <strong>{data.title}</strong>
+              {data.link ? (
+                <a
+                  className="badge btn shadow-none external-link rounded-pill"
+                  href={data.link}
+                  role="button"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open <FontAwesomeIcon icon={faExternalLink} />
+                </a>
+              ) : null}
             </div>
           </div>
         </div>

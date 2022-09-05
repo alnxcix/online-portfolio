@@ -18,9 +18,14 @@ const About = () => (
     </h2>
     <div className="ms-5">
       <p>
-        I'm <strong className="gradient">Roy Allen Nidoy</strong>, a
-        Philippine-based IT student and an aspiring frontend developer. Need
-        help on web development stuffs? Contact me and I'll gladly help you.
+        I'm <strong className="gradient">Roy Allen Nidoy</strong>, a software
+        engineer based in Manila, Philippines. I mostly do some Frontend stuffs,
+        so if you need help regarding that, you can contact me and we can
+        discuss it.
+      </p>
+      <p>
+        My other hobbies? I like consuming media, especially fictional novels
+        and video games.
       </p>
       <hr />
       <div className="d-flex flex-wrap">

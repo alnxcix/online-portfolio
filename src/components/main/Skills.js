@@ -4,60 +4,67 @@ import ReactTooltip from "react-tooltip";
 const Skills = () => (
   <>
     <ReactTooltip effect="solid" />
-    <h2 className="fw-bold">
-      💯 <span className="gradient">Proficient</span>
-    </h2>
-    <div className="ms-5">
-      <p className="text-muted">
-        Languages, tools, and frameworks that I am most comfortable with.
-      </p>
-      {skills_high.map((e, i) => (
-        <img
-          alt=""
-          className="mb-3 me-2"
-          data-tip={e.label}
-          height="50"
-          key={i}
-          src={e.logo}
-        />
-      ))}
-      <hr />
-    </div>
-    <h2 className="fw-bold mb-3">
-      👍 <span className="gradient">With Experience</span>
-    </h2>
-    <div className="ms-5">
-      <p className="text-muted">
-        Languages and tools that I also work (or used to work) with.
-      </p>
-      {skills_medium.map((e, i) => (
-        <img
-          alt=""
-          className="mb-3 me-2"
-          data-tip={e.label}
-          height="50"
-          key={i}
-          src={e.logo}
-        />
-      ))}
-      <hr />
-    </div>
-    <h2 className="fw-bold mb-3">
-      ⏳ <span className="gradient">Currently Learning</span>
-    </h2>
-    <div className="ms-5">
-      <p className="text-muted">Tools on their way to the lists above.</p>
-      {skills_low.map((e, i) => (
-        <img
-          alt=""
-          className="mb-3 me-3"
-          data-tip={e.label}
-          height="50"
-          key={i}
-          src={e.logo}
-        />
-      ))}
-    </div>
+    {skills_high.length === 0 ? null : (
+      <div className="d-flex gap-3">
+        <h2>💯</h2>
+        <div className="flex-grow-1 border-bottom mb-3 pb-3">
+          <h2 className="fw-bold gradient">Proficient</h2>
+          <p className="text-muted">
+            Languages, tools, and frameworks that I am most comfortable with.
+          </p>
+          {skills_high.map((e, i) => (
+            <img
+              alt=""
+              className="mb-3 me-2"
+              data-tip={e.label}
+              height="50"
+              key={i}
+              src={e.logo}
+            />
+          ))}
+        </div>
+      </div>
+    )}
+    {skills_medium.length === 0 ? null : (
+      <div className="d-flex gap-3">
+        <h2>👍</h2>
+        <div className="flex-grow-1">
+          <h2 className="fw-bold gradient">With Experience</h2>
+          <p className="text-muted">
+            Languages and tools that I also work (or used to work) with.
+          </p>
+          {skills_medium.map((e, i) => (
+            <img
+              alt=""
+              className="mb-3 me-2"
+              data-tip={e.label}
+              height="50"
+              key={i}
+              src={e.logo}
+            />
+          ))}
+        </div>
+      </div>
+    )}
+    {skills_low.length === 0 ? null : (
+      <div className="d-flex gap-3">
+        <h2>⏳</h2>
+        <div className="flex-grow-1">
+          <h2 className="fw-bold gradient">Currently Learning</h2>
+          <p className="text-muted">Tools on their way to the lists above.</p>
+          {skills_low.map((e, i) => (
+            <img
+              alt=""
+              className="mb-3 me-3"
+              data-tip={e.label}
+              height="50"
+              key={i}
+              src={e.logo}
+            />
+          ))}
+        </div>
+      </div>
+    )}
   </>
 );
 

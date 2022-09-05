@@ -11,7 +11,12 @@ const Experiences = () => (
       😎 <span className="gradient">Experiences</span>
     </h2>
     {data.map((e, i) => (
-      <TimelineComponent data={e} key={i} />
+      <TimelineComponent
+        data={e}
+        isLast={data.length === i + 1}
+        isMany={data.length > 1}
+        key={i}
+      />
     ))}
   </>
 );

@@ -1,33 +1,61 @@
-import amazonaws from "assets/svg/amazonaws.svg";
-import androidstudio from "assets/svg/androidstudio.svg";
-import bootstrap from "assets/svg/bootstrap.svg";
-import css3 from "assets/svg/css3.svg";
-import electron from "assets/svg/electron.svg";
-import git from "assets/svg/git.svg";
-import html5 from "assets/svg/html5.svg";
-import java from "assets/svg/java.svg";
-import javascript from "assets/svg/javascript.svg";
-import mongodb from "assets/svg/mongodb.svg";
-import nextdotjs from "assets/svg/nextdotjs.svg";
-import nodedotjs from "assets/svg/nodedotjs.svg";
-import react from "assets/svg/react.svg";
-import tailwindcss from "assets/svg/tailwindcss.svg";
-
 export const skills_high = [
-  { label: "HTML", logo: html5 },
-  { label: "CSS", logo: css3 },
-  { label: "JavaScript", logo: javascript },
-  { label: "Bootstrap", logo: bootstrap },
-  { label: "React", logo: react },
-  { label: "Next", logo: nextdotjs },
+  {
+    label: "HTML",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  },
+  {
+    label: "CSS",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  },
+  {
+    label: "JavaScript",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    label: "Bootstrap",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+  },
+  {
+    label: "React",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    label: "Next",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  },
 ];
 export const skills_medium = [
-  { label: "Java", logo: java },
-  { label: "Git", logo: git },
-  { label: "Node", logo: nodedotjs },
-  { label: "MongoDB", logo: mongodb },
-  { label: "Android Studio", logo: androidstudio },
-  { label: "Electron", logo: electron },
-  { label: "Amazon AWS", logo: amazonaws },
+  {
+    label: "Java",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+  },
+  {
+    label: "Git",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    label: "Node",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  },
+  {
+    label: "MongoDB",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    label: "Android Studio",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
+  },
+  {
+    label: "Electron",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
+  },
+  {
+    label: "Amazon Web Services (AWS)",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+  },
+  {
+    label: "Figma",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+  },
 ];
-export const skills_low = [{ label: "Tailwind", logo: tailwindcss }];
+export const skills_low = [];

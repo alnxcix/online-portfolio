@@ -1,13 +1,15 @@
 import { faExternalLink, faLocation } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const EducationTimelineComponent = ({ data }) => (
-  <div className="d-flex align-items-center">
-    <div className="dot" />
-    <div className="border-start ms-2 w-100 ps-3">
-      <div className="card my-2 rounded-3 shadow">
-        <div className="card-body">
-          <div className="d-flex">
+const EducationTimelineComponent = ({ data, isLast, isMany }) => (
+  <>
+    <div className="d-flex align-items-center">
+      <div className="dot" />
+      <div
+        className={`${isMany ? "border-start ms-2 ps-3 w-100" : null} w-100`}
+      >
+        <div className="card rounded-3 shadow">
+          <div className="card-body d-flex">
             <img
               alt=""
               className="me-3 rounded-circle shadow"
@@ -40,12 +42,12 @@ const EducationTimelineComponent = ({ data }) => (
               <small className="text-muted">
                 <FontAwesomeIcon icon={faLocation} /> {data.location}
               </small>
-              {data.awards.length > 0 ? (
+              {data.achievements.length > 0 ? (
                 <>
                   <hr />
                   <small className="text-muted">
-                    <strong>Awards:</strong>{" "}
-                    {data.awards.map((e) => e).join(", ")}
+                    <strong>Achievements:</strong>{" "}
+                    {data.achievements.map((e) => e).join(", ")}
                   </small>
                 </>
               ) : null}
@@ -54,7 +56,8 @@ const EducationTimelineComponent = ({ data }) => (
         </div>
       </div>
     </div>
-  </div>
+    {isMany && !isLast ? <div className="border-start w-100 ms-2 p-2" /> : null}
+  </>
 );
 
 export default EducationTimelineComponent;

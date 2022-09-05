@@ -7,16 +7,6 @@ import {
 
 export const about_links = [
   {
-    icon: faTwitter,
-    title: "Twitter",
-    value: "https://twitter.com/alnxcix",
-  },
-  {
-    icon: faInstagram,
-    title: "Instagram",
-    value: "https://www.instagram.com/alnxcix/",
-  },
-  {
     icon: faLinkedin,
     title: "LinkedIn",
     value: "https://linkedin.com/in/alnxcix",
@@ -25,5 +15,15 @@ export const about_links = [
     icon: faGithub,
     title: "GitHub",
     value: "https://github.com/alnxcix",
+  },
+  {
+    icon: faTwitter,
+    title: "Twitter",
+    value: "https://twitter.com/alnxcix",
+  },
+  {
+    icon: faInstagram,
+    title: "Instagram",
+    value: "https://www.instagram.com/alnxcix/",
   },
 ];

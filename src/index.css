@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
 @import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css");
 
 * {
   font-family: "Montserrat", sans-serif;
@@ -33,8 +34,10 @@ body {
 }
 
 .dot {
-  background-image: linear-gradient(45deg, #14213d, #fca311);
+  background-color: #fff;
+  border-color: #dee2e6;
   border-radius: 50%;
+  border-style: solid;
   height: 17px;
   position: absolute;
   width: 17px;
