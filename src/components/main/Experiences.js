@@ -7,9 +7,10 @@ const TimelineComponent = lazy(() =>
 
 const Experiences = () => (
   <>
-    <h2 className="fw-bold m-0 mb-3">
-      😎 <span className="gradient">Experiences</span>
-    </h2>
+    <div className="d-flex gap-3">
+      <h2>😎</h2>
+      <h2 className="fw-bold gradient">Experiences</h2>
+    </div>
     {data.map((e, i) => (
       <TimelineComponent
         data={e}

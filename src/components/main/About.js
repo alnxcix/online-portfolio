@@ -13,35 +13,37 @@ const LinkComponent = lazy(() =>
 
 const About = () => (
   <>
-    <h2 className="fw-bold mb-3">
-      🙋‍♂️ <span className="gradient">Hello there!</span>
-    </h2>
-    <div className="ms-5">
-      <p>
-        I'm <strong className="gradient">Roy Allen Nidoy</strong>, a software
-        engineer based in Manila, Philippines. I mostly do Frontend stuffs using
-        React, so if you need help with that, you can contact me and we can
-        discuss it.
-      </p>
-      <p>
-        When I'm not coding, I entertain myself through playing video games and,
-        sometimes, reading fictional novels.
-      </p>
-      <hr />
-      <div className="d-flex flex-wrap">
-        {main.map((e, i) => (
-          <DataComponent data={e} key={i} />
-        ))}
-      </div>
-      <hr />
+    <div className="d-flex gap-3">
+      <h2>🙋‍♂️</h2>
       <div>
+        <h2 className="fw-bold gradient">Hello there!</h2>
         <p>
-          <FontAwesomeIcon icon={faLink} /> Also, check out my other links:
+          I'm <strong className="gradient">Roy Allen Nidoy</strong>{" "}
+          <small className="text-muted">(he/him/his)</small>, a software
+          engineer based in Manila, Philippines. I mostly do Frontend stuffs
+          using React, so if you need help with that, you can contact me and we
+          can discuss it.
         </p>
-        <div className="row row-cols-2 g-3">
-          {links.map((e, i) => (
-            <LinkComponent data={e} key={i} />
+        <p>
+          When I'm not coding, I entertain myself with video games and,
+          sometimes, fictional novels.
+        </p>
+        <hr />
+        <div className="row row-cols-1 row-cols-lg-2 g-3">
+          {main.map((e, i) => (
+            <DataComponent data={e} key={i} />
           ))}
+        </div>
+        <hr />
+        <div>
+          <p>
+            <FontAwesomeIcon icon={faLink} /> Also, check out my other links:
+          </p>
+          <div className="row row-cols-2 g-3">
+            {links.map((e, i) => (
+              <LinkComponent data={e} key={i} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

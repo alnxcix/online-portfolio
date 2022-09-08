@@ -1,5 +1,5 @@
 const AboutDataComponent = ({ data }) => (
-  <div className="w-50">
+  <div>
     <small className="fw-bold gradient">{data.label}</small>
     <p>
       {data.value} <small className="text-muted">{data.smallValue}</small>

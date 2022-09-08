@@ -12,21 +12,17 @@ const Projects = lazy(() => import("components/main/Projects"));
 const Skills = lazy(() => import("components/main/Skills"));
 
 const App = () => {
-  const [activeBtn, setActiveBtn] = useState("About");
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
-  useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => {
-        // eslint-disable-next-line no-mixed-operators
-        if (window.innerWidth < 992 !== isMobile)
-          setIsMobile(window.innerWidth < 992);
-      },
-      false
-    );
-  }, [isMobile]);
+  const [activeView, setActiveView] = useState("About");
+  const views = {
+    About: <About />,
+    Education: <Education />,
+    Experiences: <Experiences />,
+    Projects: <Projects />,
+    Skills: <Skills />,
+  };
   return (
     <div className="d-flex flex-column" style={{ minHeight: "100vh" }}>
+      {/* main content */}
       <div className="flex-grow-1 container py-5">
         <div className="justify-content-center row">
           <div className="col-5 col-md-2">
@@ -40,35 +36,15 @@ const App = () => {
             />
           </div>
           <div className="col-md-7">
-            {isMobile ? (
-              <div className="dropdown">
-                <button
-                  className="btn-active btn dropdown-toggle mb-3 px-3 rounded-pill shadow-none"
-                  data-bs-toggle="dropdown"
-                >
-                  {activeBtn}
-                </button>
-                <ul className="dropdown-menu">
-                  {[
-                    "About",
-                    "Education",
-                    "Experiences",
-                    "Projects",
-                    "Skills",
-                  ].map((e, i) => (
-                    <li key={i}>
-                      <button
-                        className="dropdown-item"
-                        onClick={() => setActiveBtn(e)}
-                      >
-                        {e}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : (
-              <div className="mb-3">
+            {/* on smaller screens */}
+            <div className="dropdown d-lg-none">
+              <button
+                className="btn-active btn dropdown-toggle mb-3 px-3 rounded-pill shadow-none"
+                data-bs-toggle="dropdown"
+              >
+                {activeView}
+              </button>
+              <ul className="dropdown-menu">
                 {[
                   "About",
                   "Education",
@@ -76,39 +52,44 @@ const App = () => {
                   "Projects",
                   "Skills",
                 ].map((e, i) => (
+                  <li key={i}>
+                    <button
+                      className="dropdown-item"
+                      onClick={() => setActiveView(e)}
+                    >
+                      {e}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* on larger screens */}
+            <div className="mb-3 d-none d-lg-block">
+              {["About", "Education", "Experiences", "Projects", "Skills"].map(
+                (e, i) => (
                   <button
                     className={`btn btn-default rounded-pill me-1 px-3 shadow-none ${
-                      activeBtn === e ? "btn-active" : null
+                      activeView === e ? "btn-active" : null
                     }`}
                     key={i}
-                    onClick={() => setActiveBtn(e)}
+                    onClick={() => setActiveView(e)}
                   >
                     {e}
                   </button>
-                ))}
-              </div>
-            )}
-
+                )
+              )}
+            </div>
             <div className="card rounded-3 w-100">
               <div className="card-body">
                 <Suspense fallback={<div className="spinner-border" />}>
-                  {activeBtn === "About" ? (
-                    <About />
-                  ) : activeBtn === "Education" ? (
-                    <Education />
-                  ) : activeBtn === "Experiences" ? (
-                    <Experiences />
-                  ) : activeBtn === "Projects" ? (
-                    <Projects />
-                  ) : (
-                    <Skills />
-                  )}
+                  {views[activeView]}
                 </Suspense>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {/* footer */}
       <div className="align-items-center d-flex footer justify-content-between p-3">
         <small className="m-0">
           <FontAwesomeIcon icon={faCopyright} /> Copyright 2022 Roy Allen Nidoy

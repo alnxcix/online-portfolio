@@ -1,7 +1,7 @@
 export const about_main = [
   {
     label: "LOCATION",
-    value: "Sampaloc, Manila",
+    value: "Manila, Philippines",
   },
   {
     label: "EMAIL",
@@ -10,11 +10,6 @@ export const about_main = [
   {
     label: "MOBILE",
     value: "(+63) 908 739 7998",
-  },
-  {
-    label: "GENDER",
-    value: "Male",
-    smallValue: ["he", "him", "his"].join("/"),
   },
   {
     label: "BIRTHDATE",
