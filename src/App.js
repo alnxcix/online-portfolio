@@ -92,7 +92,7 @@ const App = () => {
       {/* footer */}
       <div className="align-items-center d-flex footer justify-content-between p-3">
         <small className="m-0">
-          <FontAwesomeIcon icon={faCopyright} /> Copyright 2022 Roy Allen Nidoy
+          <FontAwesomeIcon icon={faCopyright} /> Copyright 2023 Roy Allen Nidoy
         </small>
       </div>
     </div>
