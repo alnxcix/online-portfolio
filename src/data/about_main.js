@@ -12,7 +12,7 @@ export const about_main = [
     value: "(+63) 908 739 7998",
   },
   {
-    label: "BIRTHDATE",
-    value: "Nov. 20, 1999 ♏",
+    label: "PRONOUNS",
+    value: "he/him/his",
   },
 ];

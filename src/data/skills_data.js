@@ -1,5 +1,9 @@
 export const skills_high = [
   {
+    label: "React",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
     label: "HTML",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
   },
@@ -16,23 +20,15 @@ export const skills_high = [
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
   },
   {
-    label: "React",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-  },
-  {
-    label: "Next",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-  },
-];
-export const skills_medium = [
-  {
-    label: "Java",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-  },
-  {
     label: "Git",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
+  {
+    label: "Ant Design",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/antdesign/antdesign-original.svg",
+  },
+];
+export const skills_medium = [
   {
     label: "Node",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
@@ -40,6 +36,18 @@ export const skills_medium = [
   {
     label: "MongoDB",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    label: "Next",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    label: "Figma",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+  },
+  {
+    label: "Java",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
   },
   {
     label: "Android Studio",
@@ -52,10 +60,6 @@ export const skills_medium = [
   {
     label: "Amazon Web Services (AWS)",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
-  },
-  {
-    label: "Figma",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
 ];
 export const skills_low = [];

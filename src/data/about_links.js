@@ -19,11 +19,11 @@ export const about_links = [
   {
     icon: faTwitter,
     title: "Twitter",
-    value: "https://twitter.com/alnxcix",
+    value: "https://twitter.com/kabadoventi",
   },
   {
     icon: faInstagram,
     title: "Instagram",
-    value: "https://www.instagram.com/alnxcix/",
+    value: "https://www.instagram.com/kabadoventi",
   },
 ];

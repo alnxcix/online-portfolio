@@ -18,15 +18,15 @@ const About = () => (
       <div>
         <h2 className="fw-bold gradient">Hello there!</h2>
         <p>
-          I'm <strong className="gradient">Roy Allen Nidoy</strong>{" "}
-          <small className="text-muted">(he/him/his)</small>, a software
+          I'm <strong className="gradient">Roy Allen Nidoy</strong>, a software
           engineer based in Manila, Philippines. I mostly do Frontend stuffs
           using React, so if you need help with that, you can contact me and we
           can discuss it.
         </p>
         <p>
-          When I'm not coding, I entertain myself with video games and,
-          sometimes, fictional novels.
+          Outside of coding, I entertain myself by taking walks outside, going
+          to cafés, playing video games, reading fictional novels, or watching
+          films.
         </p>
         <hr />
         <div className="row row-cols-1 row-cols-lg-2 g-3">
