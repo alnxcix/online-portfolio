@@ -19,13 +19,13 @@ const About = () => (
         <h2 className="fw-bold gradient">Hello there!</h2>
         <p>
           I'm <strong className="gradient">Roy Allen Nidoy</strong>, a software
-          engineer based in Manila, Philippines. I mostly do Frontend stuffs
+          engineer based in Manila, Philippines. I mostly do Frontend stuff
           using React, so if you need help with that, you can contact me and we
           can discuss it.
         </p>
         <p>
           Outside of coding, I entertain myself by taking walks outside, going
-          to cafés, playing video games, reading fictional novels, or watching
+          to cafés, playing video games, reading fiction novels, or watching
           films.
         </p>
         <hr />
