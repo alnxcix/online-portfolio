@@ -28,7 +28,7 @@ const Skills = () => (
     {skills_medium.length === 0 ? null : (
       <div className="d-flex gap-3">
         <h2>👍</h2>
-        <div className="flex-grow-1">
+        <div className="flex-grow-1 border-bottom mb-3 pb-3">
           <h2 className="fw-bold gradient">With Experience</h2>
           <p className="text-muted">
             Languages and tools that I also work (or used to work) with.
@@ -50,8 +50,10 @@ const Skills = () => (
       <div className="d-flex gap-3">
         <h2>⏳</h2>
         <div className="flex-grow-1">
-          <h2 className="fw-bold gradient">Currently Learning</h2>
-          <p className="text-muted">Tools on their way to the lists above.</p>
+          <h2 className="fw-bold gradient">General Knowledge</h2>
+          <p className="text-muted">
+            Languages and tools that I have some knowledge of.
+          </p>
           {skills_low.map((e, i) => (
             <img
               alt=""

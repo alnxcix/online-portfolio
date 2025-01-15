@@ -54,6 +54,13 @@ const ExperiencesTimelineComponent = ({ data, isLast, isMany }) => (
                   </ul>
                 </>
               ) : null}
+              <div className="mt-3">
+                {data.tags.map((e) => (
+                  <span className="badge border border-dark rounded-pill bg-light text-dark mb-1 me-1">
+                    {e}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
