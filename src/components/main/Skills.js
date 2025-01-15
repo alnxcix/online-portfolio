@@ -28,7 +28,7 @@ const Skills = () => (
     {skills_medium.length === 0 ? null : (
       <div className="d-flex gap-3">
         <h2>👍</h2>
-        <div className="flex-grow-1 border-bottom mb-3 pb-3">
+        <div className="flex-grow-1">
           <h2 className="fw-bold gradient">With Experience</h2>
           <p className="text-muted">
             Languages and tools that I also work (or used to work) with.
