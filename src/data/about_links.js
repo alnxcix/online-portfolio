@@ -2,7 +2,7 @@ import {
   faGithub,
   faInstagram,
   faLinkedin,
-  faTwitter,
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
 export const about_links = [
@@ -17,9 +17,9 @@ export const about_links = [
     value: "https://github.com/alnxcix",
   },
   {
-    icon: faTwitter,
+    icon: faXTwitter,
     title: "Twitter",
-    value: "https://twitter.com/kabadoventi",
+    value: "https://x.com/kabadoventi",
   },
   {
     icon: faInstagram,
