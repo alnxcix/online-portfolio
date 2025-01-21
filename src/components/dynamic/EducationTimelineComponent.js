@@ -32,7 +32,7 @@ const EducationTimelineComponent = ({ data, isLast, isMany }) => (
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Visit Website <FontAwesomeIcon icon={faExternalLink} />
+                    Learn More <FontAwesomeIcon icon={faExternalLink} />
                   </a>
                 </small>
               </div>

@@ -1,14 +1,14 @@
 import ckm from "assets/images/cho-korean-mart.webp";
 import nabi from "assets/images/nabi.webp";
 
-export const academic_projects_data = [
+export const client_based_projects = [
   {
     title: "Nabi",
     startingDate: "Aug. 2021",
     endingDate: "Dec. 2021",
     description:
-      "Capstone project for my undergrad program. A progressive web application focusing on mental wellness. Developed in coordination with the Youth for Mental Health Coalition, a Philippine-based NGO.",
-    tags: ["Client-Based", "MERN", "MongoDB", "Express", "React", "Node"],
+      "Capstone project. A progressive web application focusing on mental wellness. Developed in coordination with the Youth for Mental Health Coalition, a Philippine-based NGO.",
+    tags: ["MERN", "MongoDB", "Express", "React", "Node"],
     logo: nabi,
     link: null,
   },
@@ -17,10 +17,22 @@ export const academic_projects_data = [
     startingDate: "Feb. 2021",
     endingDate: "June 2021",
     description:
-      "Client-based project for my Software Engineering course. This is an inventory management and POS in one standalone desktop application. Developed for CHO Korean Mart.",
+      "Software Engineering project. This is an inventory management and POS in one standalone desktop application. Developed for CHO Korean Mart.",
     tags: ["React", "Electron", "NeDB"],
     logo: ckm,
     link: null,
+  },
+];
+
+export const showcase_projects = [
+  {
+    title: "CPU Scheduling Simulator",
+    startingDate: null,
+    endingDate: null,
+    description: "React project that simulates CPU scheduling algorithms.",
+    tags: ["React", "Material UI", "Algorithms"],
+    logo: null,
+    link: "https://alnxcix.github.io/react-cpu-scheduling/",
   },
   {
     title: "Wordle Clone",
@@ -31,19 +43,6 @@ export const academic_projects_data = [
     logo: null,
     link: "https://alnxcix.github.io/react-wordle/",
   },
-  {
-    title: "CPU Scheduling Simulator",
-    startingDate: "Nov. 2020",
-    endingDate: null,
-    description:
-      "React project that simulates CPU scheduling algorithms such as FCFS, SJF, SRTF, Priority.",
-    tags: ["React", "Material UI", "Algorithm"],
-    logo: null,
-    link: "https://alnxcix.github.io/react-cpu-scheduling",
-  },
-];
-
-export const personal_projects_data = [
   {
     title: "PokéDex",
     startingDate: null,
