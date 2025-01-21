@@ -13,8 +13,7 @@ const Projects = () => (
       <div className="flex-grow-1 border-bottom mb-3 pb-3">
         <h2 className="fw-bold gradient">Academic Projects</h2>
         <p className="text-muted">
-          Client-based projects that I have developed as part of my academic
-          requirements.
+          Projects that I have developed as part of my academic requirements.
         </p>
         <div className="row row-cols-1 row-cols-lg-2 g-3">
           {data1.map((e, i) => (

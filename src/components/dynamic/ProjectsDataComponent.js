@@ -15,16 +15,22 @@ const ProjectsDataComponent = ({ data }) => (
               width="60"
             />
           ) : null}
-          <div className="flex-grow-1">
-            <div className="mb-1">
-              <small className="font-monospace text-muted">
-                {data.startingDate === null || data.endingDate === null
-                  ? null
-                  : `${data.startingDate} - ${data.endingDate}`}
-              </small>
+          <div className="flex-grow-1 d-flex">
+            <div className="flex-grow-1">
+              <div className="mb-1">
+                <small className="font-monospace text-muted">
+                  {data.startingDate === null || data.endingDate === null
+                    ? null
+                    : data.endingDate === undefined
+                    ? data.startingDate
+                    : `${data.startingDate} - ${data.endingDate}`}
+                </small>
+              </div>
+              <div className="align-items-center d-flex justify-content-between mb-1">
+                <strong>{data.title}</strong>
+              </div>
             </div>
-            <div className="align-items-center d-flex justify-content-between mb-1">
-              <strong>{data.title}</strong>
+            <div>
               {data.link ? (
                 <a
                   className="badge btn shadow-none external-link rounded-pill"

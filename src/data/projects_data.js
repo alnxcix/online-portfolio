@@ -8,7 +8,7 @@ export const academic_projects_data = [
     endingDate: "Dec. 2021",
     description:
       "Capstone project for my undergrad program. A progressive web application focusing on mental wellness. Developed in coordination with the Youth for Mental Health Coalition, a Philippine-based NGO.",
-    tags: ["MERN", "MongoDB", "Express", "React", "Node"],
+    tags: ["Client-Based", "MERN", "MongoDB", "Express", "React", "Node"],
     logo: nabi,
     link: null,
   },
@@ -22,18 +22,28 @@ export const academic_projects_data = [
     logo: ckm,
     link: null,
   },
-];
-
-export const personal_projects_data = [
   {
     title: "Wordle Clone",
     startingDate: null,
     endingDate: null,
     description: "A clone of the famous game Wordle. Built entirely on React.",
-    tags: ["React"],
+    tags: ["React", "Game"],
     logo: null,
     link: "https://alnxcix.github.io/react-wordle/",
   },
+  {
+    title: "CPU Scheduling Simulator",
+    startingDate: "Nov. 2020",
+    endingDate: null,
+    description:
+      "React project that simulates CPU scheduling algorithms such as FCFS, SJF, SRTF, Priority.",
+    tags: ["React", "Material UI", "Algorithm"],
+    logo: null,
+    link: "https://alnxcix.github.io/react-cpu-scheduling",
+  },
+];
+
+export const personal_projects_data = [
   {
     title: "PokéDex",
     startingDate: null,
