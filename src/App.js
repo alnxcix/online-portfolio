@@ -81,7 +81,13 @@ const App = () => {
             </div>
             <div className="card rounded-3 w-100">
               <div className="card-body">
-                <Suspense fallback={<div className="spinner-border" />}>
+                <Suspense
+                  fallback={
+                    <div className="text-center">
+                      <span className="spinner-border" />
+                    </div>
+                  }
+                >
                   {views[activeView]}
                 </Suspense>
               </div>
