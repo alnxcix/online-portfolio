@@ -6,14 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 type ExperiencesTimelineComponentPropType = {
   data: {
     company: string;
-    endingDate: string;
+    endingDate?: string;
     location: string;
-    logo: string;
-    notes: string[];
+    logo?: string;
+    notes?: string[];
     position: string;
     startingDate: string;
-    tags: string[];
-    website: string;
+    tags?: string[];
+    website?: string;
   };
   isLast: boolean;
   isMany: boolean;
@@ -65,20 +65,16 @@ const ExperiencesTimelineComponent = ({
               <small className="text-muted">
                 <FontAwesomeIcon icon={faLocation} /> {data.location}
               </small>
-              {data.notes ? (
-                <>
-                  <hr />
-                  <ul>
-                    {data.notes.map((e, i) => (
-                      <li key={i}>
-                        <small className="text-muted">{e}</small>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              ) : null}
+              {(data.notes || data.tags) && <hr />}
+              <ul>
+                {data.notes?.map((e, i) => (
+                  <li key={i}>
+                    <small className="text-muted">{e}</small>
+                  </li>
+                ))}
+              </ul>
               <div className="mt-3">
-                {data.tags.map((e, i) => (
+                {data.tags?.map((e, i) => (
                   <span
                     key={i}
                     className="badge border border-dark rounded-pill bg-light text-dark mb-1 me-1"

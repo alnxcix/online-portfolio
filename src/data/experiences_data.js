@@ -1,7 +1,18 @@
 import dk from 'assets/images/dk.webp';
 import gappify from 'assets/images/gappify.webp';
+import oboda from 'assets/images/oboda.webp';
 
 export const experiences_data = [
+  {
+    logo: oboda,
+    startingDate: 'May 2, 2025',
+    endingDate: 'Present',
+    company: 'oboda',
+    location: 'Quezon City, Metro Manila, Philippines',
+    website: 'https://www.oboda.ai/',
+    position: 'Software Engineer',
+    tags: ['React', 'TypeScript'],
+  },
   {
     logo: gappify,
     startingDate: 'Sept. 12, 2022',
@@ -27,6 +38,7 @@ export const experiences_data = [
       'Ant Design',
       'TanStack Query',
       'Zustand',
+      'Accounting',
     ],
   },
   {
@@ -53,6 +65,7 @@ export const experiences_data = [
       'AWS',
       'Machine Learning',
       'Figma',
+      'KYC',
     ],
   },
 ];
