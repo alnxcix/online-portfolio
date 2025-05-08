@@ -11,7 +11,7 @@ import AvatarLarge from 'assets/images/avatar-lg.webp';
 import AvatarSmall from 'assets/images/avatar-sm.webp';
 
 // ** custom components **
-import Views from 'views';
+import views from 'views';
 
 // ** enums **
 import ViewsEnums from 'enums/ViewsEnums';
@@ -81,7 +81,7 @@ const App = () => {
                     </div>
                   }
                 >
-                  {Views[activeView]}
+                  {views[activeView]}
                 </Suspense>
               </div>
             </div>

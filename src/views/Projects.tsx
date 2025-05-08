@@ -6,8 +6,8 @@ import { client_based_projects } from 'data/projects_data';
 import { showcase_projects } from 'data/projects_data';
 
 // ** custom components **
-const ProjectsDataComponent = lazy(
-  () => import('components/ProjectsDataComponent')
+const ProjectsDataComponent = lazy(() =>
+  import('components').then((m) => ({ default: m.ProjectsDataComponent }))
 );
 
 // =====================

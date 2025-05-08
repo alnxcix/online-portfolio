@@ -12,7 +12,7 @@ const Projects = lazy(() => import('./Projects'));
 const Skills = lazy(() => import('./Skills'));
 
 // ================================================
-const Views: Record<ViewsEnums, JSX.Element> = {
+const views: Record<ViewsEnums, JSX.Element> = {
   [ViewsEnums.ABOUT]: <About />,
   [ViewsEnums.EDUCATION]: <Education />,
   [ViewsEnums.EXPERIENCES]: <Experiences />,
@@ -20,4 +20,4 @@ const Views: Record<ViewsEnums, JSX.Element> = {
   [ViewsEnums.SKILLS]: <Skills />,
 };
 
-export default Views;
+export default views;

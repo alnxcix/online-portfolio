@@ -5,8 +5,8 @@ import { lazy } from 'react';
 import { education_data as data } from 'data/education_data';
 
 // ** lazy load custom components **
-const TimelineComponent = lazy(
-  () => import('components/EducationTimelineComponent')
+const TimelineComponent = lazy(() =>
+  import('components').then((m) => ({ default: m.EducationTimelineComponent }))
 );
 
 // ======================

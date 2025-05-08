@@ -5,8 +5,10 @@ import { lazy } from 'react';
 import { experiences_data as data } from 'data/experiences_data';
 
 // ** lazy load custom components **
-const TimelineComponent = lazy(
-  () => import('components/ExperiencesTimelineComponent')
+const TimelineComponent = lazy(() =>
+  import('components').then((m) => ({
+    default: m.ExperiencesTimelineComponent,
+  }))
 );
 
 // ========================

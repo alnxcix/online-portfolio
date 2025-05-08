@@ -10,8 +10,13 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // ** lazy load custom components **
-const DataComponent = lazy(() => import('components/AboutDataComponent'));
-const LinkComponent = lazy(() => import('components/AboutLinkComponent'));
+// ** lazy load custom components **
+const DataComponent = lazy(() =>
+  import('components').then((m) => ({ default: m.AboutDataComponent }))
+);
+const LinkComponent = lazy(() =>
+  import('components').then((m) => ({ default: m.AboutLinkComponent }))
+);
 
 // ==================
 const About = () => (
