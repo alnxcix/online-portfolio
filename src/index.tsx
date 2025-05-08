@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 
 // ** styles **
 import 'bootstrap';
+import 'react-tooltip/dist/react-tooltip.css';
 import './index.css';
 
 // ** custom components **

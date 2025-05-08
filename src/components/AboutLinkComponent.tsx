@@ -1,6 +1,18 @@
+// ** icons **
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const AboutLinkComponent = ({ data }) => (
+// ** types **
+import type { IconProp } from '@fortawesome/fontawesome-svg-core';
+type AboutLinkComponentPropType = {
+  data: {
+    icon: IconProp;
+    title: string;
+    value: string;
+  };
+};
+
+// ===================================================================
+const AboutLinkComponent = ({ data }: AboutLinkComponentPropType) => (
   <div className="col">
     <a
       className="btn rounded-pill shadow-none external-link w-100"

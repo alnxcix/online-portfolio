@@ -1,7 +1,30 @@
+// ** icons **
 import { faExternalLink, faLocation } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const ExperiencesTimelineComponent = ({ data, isLast, isMany }) => (
+// ** types **
+type ExperiencesTimelineComponentPropType = {
+  data: {
+    company: string;
+    endingDate: string;
+    location: string;
+    logo: string;
+    notes: string[];
+    position: string;
+    startingDate: string;
+    tags: string[];
+    website: string;
+  };
+  isLast: boolean;
+  isMany: boolean;
+};
+
+// ====================================
+const ExperiencesTimelineComponent = ({
+  data,
+  isLast,
+  isMany,
+}: ExperiencesTimelineComponentPropType) => (
   <>
     <div className="d-flex align-items-center">
       <div className="dot" />

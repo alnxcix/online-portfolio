@@ -1,16 +1,23 @@
+// ** react imports **
 import { lazy } from 'react';
+
+// ** data **
 import { about_links as links } from 'data/about_links';
 import { about_main as main } from 'data/about_main';
+
+// ** icons **
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+// ** lazy load custom components **
 const DataComponent = lazy(
-  () => import('components/dynamic/AboutDataComponent')
+  () => import('components/AboutDataComponent')
 );
 const LinkComponent = lazy(
-  () => import('components/dynamic/AboutLinkComponent')
+  () => import('components/AboutLinkComponent')
 );
 
+// ==================
 const About = () => (
   <>
     <div className="d-flex gap-3">

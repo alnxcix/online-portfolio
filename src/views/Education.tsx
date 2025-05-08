@@ -1,10 +1,15 @@
+// ** react imports **
 import { lazy } from 'react';
+
+// ** data **
 import { education_data as data } from 'data/education_data';
 
+// ** lazy load custom components **
 const TimelineComponent = lazy(
-  () => import('components/dynamic/EducationTimelineComponent')
+  () => import('components/EducationTimelineComponent')
 );
 
+// ======================
 const Education = () => (
   <>
     <div className="d-flex gap-3">

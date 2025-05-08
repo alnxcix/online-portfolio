@@ -5,11 +5,11 @@ import { lazy } from 'react';
 import ViewsEnums from '../enums/ViewsEnums';
 
 // ** lazy load custom components **
-const About = lazy(() => import('./main/About'));
-const Education = lazy(() => import('./main/Education'));
-const Experiences = lazy(() => import('./main/Experiences'));
-const Projects = lazy(() => import('./main/Projects'));
-const Skills = lazy(() => import('./main/Skills'));
+const About = lazy(() => import('./About'));
+const Education = lazy(() => import('./Education'));
+const Experiences = lazy(() => import('./Experiences'));
+const Projects = lazy(() => import('./Projects'));
+const Skills = lazy(() => import('./Skills'));
 
 // ================================================
 const Views: Record<ViewsEnums, JSX.Element> = {

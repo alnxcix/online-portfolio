@@ -11,16 +11,16 @@ import AvatarLarge from 'assets/images/avatar-lg.webp';
 import AvatarSmall from 'assets/images/avatar-sm.webp';
 
 // ** custom components **
-import Views from 'components/Views';
+import Views from 'views';
 
 // ** enums **
 import ViewsEnums from 'enums/ViewsEnums';
 
-// ======================================= 
+// =======================================
 const App = () => {
   // ** states **
   const [activeView, setActiveView] = useState<ViewsEnums>(ViewsEnums.ABOUT);
-  
+
   return (
     <div className="d-flex flex-column" style={{ minHeight: '100vh' }}>
       {/* main content */}
@@ -91,7 +91,7 @@ const App = () => {
       {/* footer */}
       <div className="align-items-center d-flex footer justify-content-between p-3">
         <small className="m-0">
-          <FontAwesomeIcon icon={faCopyright} /> Copyright{" "}
+          <FontAwesomeIcon icon={faCopyright} /> Copyright{' '}
           {new Date().getFullYear()} Roy Allen Nidoy
         </small>
       </div>

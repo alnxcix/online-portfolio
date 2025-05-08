@@ -1,9 +1,13 @@
+// ** data **
 import { skills_high, skills_medium, skills_low } from 'data/skills_data';
+
+// ** tooltip **
 import { Tooltip } from 'react-tooltip';
 
+// =====================================
 const Skills = () => (
   <>
-    <Tooltip id="skills-tooltip" effect="solid" />
+    <Tooltip id="skills-tooltip" />
     {skills_high.length === 0 ? null : (
       <div className="d-flex gap-3">
         <h2>💯</h2>
@@ -16,7 +20,8 @@ const Skills = () => (
             <img
               alt=""
               className="mb-3 me-2"
-              data-tip={e.label}
+              data-tooltip-id="skills-tooltip"
+              data-tooltip-content={e.label}
               height="50"
               key={i}
               src={e.logo}
@@ -37,7 +42,8 @@ const Skills = () => (
             <img
               alt=""
               className="mb-3 me-2"
-              data-tip={e.label}
+              data-tooltip-id="skills-tooltip"
+              data-tooltip-content={e.label}
               height="50"
               key={i}
               src={e.logo}
@@ -58,7 +64,8 @@ const Skills = () => (
             <img
               alt=""
               className="mb-3 me-3"
-              data-tip={e.label}
+              data-tooltip-id="skills-tooltip"
+              data-tooltip-content={e.label}
               height="50"
               key={i}
               src={e.logo}

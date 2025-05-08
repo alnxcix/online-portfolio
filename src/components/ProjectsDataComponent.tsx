@@ -1,7 +1,22 @@
+// ** icons **
 import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const ProjectsDataComponent = ({ data }) => (
+// ** types **
+type ProjectsDataComponentPropType = {
+  data: {
+    description: string;
+    endingDate?: string;
+    link?: string;
+    logo?: string;
+    startingDate?: string;
+    tags: string[];
+    title: string;
+  };
+};
+
+// =========================================================================
+const ProjectsDataComponent = ({ data }: ProjectsDataComponentPropType) => (
   <div className="col">
     <div className="card rounded shadow">
       <div className="card-body">
