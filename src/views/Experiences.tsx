@@ -1,10 +1,17 @@
-import { lazy } from "react";
-import { experiences_data as data } from "data/experiences_data";
+// ** react imports **
+import { lazy } from 'react';
 
+// ** data **
+import { experiences_data as data } from 'data/experiences_data';
+
+// ** lazy load custom components **
 const TimelineComponent = lazy(() =>
-  import("components/dynamic/ExperiencesTimelineComponent")
+  import('components').then((m) => ({
+    default: m.ExperiencesTimelineComponent,
+  }))
 );
 
+// ========================
 const Experiences = () => (
   <>
     <div className="d-flex gap-3">

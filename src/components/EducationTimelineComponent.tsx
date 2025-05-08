@@ -1,12 +1,34 @@
-import { faExternalLink, faLocation } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// ** icons **
+import { faExternalLink, faLocation } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const ExperiencesTimelineComponent = ({ data, isLast, isMany }) => (
+// ** types **
+type EducationTimelineComponentPropType = {
+  data: {
+    achievements: string[];
+    course: string;
+    endingYear: string | number;
+    location: string;
+    logo: string;
+    school: string;
+    startingYear: string | number;
+    website: string;
+  };
+  isLast: boolean;
+  isMany: boolean;
+};
+
+// ==================================
+const EducationTimelineComponent = ({
+  data,
+  isLast,
+  isMany,
+}: EducationTimelineComponentPropType) => (
   <>
     <div className="d-flex align-items-center">
       <div className="dot" />
       <div
-        className={`${isMany ? "border-start ms-2 ps-3 w-100" : null} w-100`}
+        className={`${isMany ? 'border-start ms-2 ps-3 w-100' : null} w-100`}
       >
         <div className="card rounded-3 shadow">
           <div className="card-body d-flex">
@@ -20,9 +42,9 @@ const ExperiencesTimelineComponent = ({ data, isLast, isMany }) => (
             <div className="w-100">
               <div className="d-flex mb-1 justify-content-between">
                 <small className="font-monospace text-muted">
-                  {data.startingDate} -{" "}
-                  {data.endingDate === null ? "Present" : data.endingDate} |{" "}
-                  {data.position}
+                  {data.startingYear} -{' '}
+                  {data.endingYear === null ? 'Present' : data.endingYear} |{' '}
+                  {data.course}
                 </small>
                 <small>
                   <a
@@ -37,37 +59,27 @@ const ExperiencesTimelineComponent = ({ data, isLast, isMany }) => (
                 </small>
               </div>
               <div className="mb-1">
-                <strong>{data.company}</strong>{" "}
+                <strong>{data.school}</strong>
               </div>
               <small className="text-muted">
                 <FontAwesomeIcon icon={faLocation} /> {data.location}
               </small>
-              {data.notes ? (
+              {data.achievements.length > 0 ? (
                 <>
                   <hr />
-                  <ul>
-                    {data.notes.map((e, i) => (
-                      <li key={i}>
-                        <small className="text-muted">{e}</small>
-                      </li>
-                    ))}
-                  </ul>
+                  <small className="text-muted">
+                    <strong>Achievements:</strong>{' '}
+                    {data.achievements.map((e) => e).join(', ')}
+                  </small>
                 </>
               ) : null}
-              <div className="mt-3">
-                {data.tags.map((e) => (
-                  <span className="badge border border-dark rounded-pill bg-light text-dark mb-1 me-1">
-                    {e}
-                  </span>
-                ))}
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    {isMany && !isLast ? <div className="border-start ms-2 w-100 p-2" /> : null}
+    {isMany && !isLast ? <div className="border-start w-100 ms-2 p-2" /> : null}
   </>
 );
 
-export default ExperiencesTimelineComponent;
+export default EducationTimelineComponent;

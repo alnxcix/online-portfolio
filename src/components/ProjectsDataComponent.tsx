@@ -1,7 +1,22 @@
-import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// ** icons **
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const ProjectsDataComponent = ({ data }) => (
+// ** types **
+type ProjectsDataComponentPropType = {
+  data: {
+    description: string;
+    endingDate?: string;
+    link?: string;
+    logo?: string;
+    startingDate?: string;
+    tags: string[];
+    title: string;
+  };
+};
+
+// =========================================================================
+const ProjectsDataComponent = ({ data }: ProjectsDataComponentPropType) => (
   <div className="col">
     <div className="card rounded shadow">
       <div className="card-body">
@@ -22,8 +37,8 @@ const ProjectsDataComponent = ({ data }) => (
                   {data.startingDate === null || data.endingDate === null
                     ? null
                     : data.endingDate === undefined
-                    ? data.startingDate
-                    : `${data.startingDate} - ${data.endingDate}`}
+                      ? data.startingDate
+                      : `${data.startingDate} - ${data.endingDate}`}
                 </small>
               </div>
               <div className="align-items-center d-flex justify-content-between mb-1">
@@ -48,8 +63,11 @@ const ProjectsDataComponent = ({ data }) => (
         <hr />
         <small className="text-muted">{data.description}</small>
         <div className="mt-3">
-          {data.tags.map((e) => (
-            <span className="badge border border-dark rounded-pill bg-light text-dark mb-1 me-1">
+          {data.tags.map((e, i) => (
+            <span
+              key={i}
+              className="badge border border-dark rounded-pill bg-light text-dark mb-1 me-1"
+            >
               {e}
             </span>
           ))}
