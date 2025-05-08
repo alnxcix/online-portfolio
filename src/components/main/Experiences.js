@@ -1,8 +1,8 @@
-import { lazy } from "react";
-import { experiences_data as data } from "data/experiences_data";
+import { lazy } from 'react';
+import { experiences_data as data } from 'data/experiences_data';
 
-const TimelineComponent = lazy(() =>
-  import("components/dynamic/ExperiencesTimelineComponent")
+const TimelineComponent = lazy(
+  () => import('components/dynamic/ExperiencesTimelineComponent')
 );
 
 const Experiences = () => (

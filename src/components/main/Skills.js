@@ -1,9 +1,9 @@
-import { skills_high, skills_medium, skills_low } from "data/skills_data";
-import ReactTooltip from "react-tooltip";
+import { skills_high, skills_medium, skills_low } from 'data/skills_data';
+import { Tooltip } from 'react-tooltip';
 
 const Skills = () => (
   <>
-    <ReactTooltip effect="solid" />
+    <Tooltip id="skills-tooltip" effect="solid" />
     {skills_high.length === 0 ? null : (
       <div className="d-flex gap-3">
         <h2>💯</h2>

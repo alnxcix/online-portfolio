@@ -1,12 +1,12 @@
-import { faExternalLink, faLocation } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLink, faLocation } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ExperiencesTimelineComponent = ({ data, isLast, isMany }) => (
   <>
     <div className="d-flex align-items-center">
       <div className="dot" />
       <div
-        className={`${isMany ? "border-start ms-2 ps-3 w-100" : null} w-100`}
+        className={`${isMany ? 'border-start ms-2 ps-3 w-100' : null} w-100`}
       >
         <div className="card rounded-3 shadow">
           <div className="card-body d-flex">
@@ -20,8 +20,8 @@ const ExperiencesTimelineComponent = ({ data, isLast, isMany }) => (
             <div className="w-100">
               <div className="d-flex mb-1 justify-content-between">
                 <small className="font-monospace text-muted">
-                  {data.startingDate} -{" "}
-                  {data.endingDate === null ? "Present" : data.endingDate} |{" "}
+                  {data.startingDate} -{' '}
+                  {data.endingDate === null ? 'Present' : data.endingDate} |{' '}
                   {data.position}
                 </small>
                 <small>
@@ -37,7 +37,7 @@ const ExperiencesTimelineComponent = ({ data, isLast, isMany }) => (
                 </small>
               </div>
               <div className="mb-1">
-                <strong>{data.company}</strong>{" "}
+                <strong>{data.company}</strong>{' '}
               </div>
               <small className="text-muted">
                 <FontAwesomeIcon icon={faLocation} /> {data.location}

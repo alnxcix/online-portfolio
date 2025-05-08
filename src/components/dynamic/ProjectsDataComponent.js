@@ -1,5 +1,5 @@
-import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ProjectsDataComponent = ({ data }) => (
   <div className="col">
@@ -22,8 +22,8 @@ const ProjectsDataComponent = ({ data }) => (
                   {data.startingDate === null || data.endingDate === null
                     ? null
                     : data.endingDate === undefined
-                    ? data.startingDate
-                    : `${data.startingDate} - ${data.endingDate}`}
+                      ? data.startingDate
+                      : `${data.startingDate} - ${data.endingDate}`}
                 </small>
               </div>
               <div className="align-items-center d-flex justify-content-between mb-1">

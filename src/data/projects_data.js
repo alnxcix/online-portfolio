@@ -1,24 +1,24 @@
-import ckm from "assets/images/cho-korean-mart.webp";
-import nabi from "assets/images/nabi.webp";
+import ckm from 'assets/images/cho-korean-mart.webp';
+import nabi from 'assets/images/nabi.webp';
 
 export const client_based_projects = [
   {
-    title: "Nabi",
-    startingDate: "Aug. 2021",
-    endingDate: "Dec. 2021",
+    title: 'Nabi',
+    startingDate: 'Aug. 2021',
+    endingDate: 'Dec. 2021',
     description:
-      "Capstone project. A progressive web application focusing on mental wellness. Developed in coordination with the Youth for Mental Health Coalition, a Philippine-based NGO.",
-    tags: ["MERN", "MongoDB", "Express", "React", "Node"],
+      'Capstone project. A progressive web application focusing on mental wellness. Developed in coordination with the Youth for Mental Health Coalition, a Philippine-based NGO.',
+    tags: ['MERN', 'MongoDB', 'Express', 'React', 'Node'],
     logo: nabi,
     link: null,
   },
   {
-    title: "CHO Korean Mart: Inventory Management App & POS",
-    startingDate: "Feb. 2021",
-    endingDate: "June 2021",
+    title: 'CHO Korean Mart: Inventory Management App & POS',
+    startingDate: 'Feb. 2021',
+    endingDate: 'June 2021',
     description:
-      "Software Engineering project. This is an inventory management and POS in one standalone desktop application. Developed for CHO Korean Mart.",
-    tags: ["React", "Electron", "NeDB"],
+      'Software Engineering project. This is an inventory management and POS in one standalone desktop application. Developed for CHO Korean Mart.',
+    tags: ['React', 'Electron', 'NeDB'],
     logo: ckm,
     link: null,
   },
@@ -26,31 +26,31 @@ export const client_based_projects = [
 
 export const showcase_projects = [
   {
-    title: "CPU Scheduling Simulator",
+    title: 'CPU Scheduling Simulator',
     startingDate: null,
     endingDate: null,
-    description: "React project that simulates CPU scheduling algorithms.",
-    tags: ["React", "Material UI", "Algorithms"],
+    description: 'React project that simulates CPU scheduling algorithms.',
+    tags: ['React', 'Material UI', 'Algorithms'],
     logo: null,
-    link: "https://alnxcix.github.io/react-cpu-scheduling/",
+    link: 'https://alnxcix.github.io/react-cpu-scheduling/',
   },
   {
-    title: "Wordle Clone",
+    title: 'Wordle Clone',
     startingDate: null,
     endingDate: null,
-    description: "A clone of the famous game Wordle. Built entirely on React.",
-    tags: ["React", "Game"],
+    description: 'A clone of the famous game Wordle. Built entirely on React.',
+    tags: ['React', 'Game'],
     logo: null,
-    link: "https://alnxcix.github.io/react-wordle/",
+    link: 'https://alnxcix.github.io/react-wordle/',
   },
   {
-    title: "PokéDex",
+    title: 'PokéDex',
     startingDate: null,
     endingDate: null,
     description:
-      "Standard PokéDex app that displays a list of Pokémons, their typings, abilities, and stats. Built using React and uses PokéAPI to fetch information.",
-    tags: ["React", "PokéAPI"],
+      'Standard PokéDex app that displays a list of Pokémons, their typings, abilities, and stats. Built using React and uses PokéAPI to fetch information.',
+    tags: ['React', 'PokéAPI'],
     logo: null,
-    link: "https://alnxcix.github.io/react-pokedex/",
+    link: 'https://alnxcix.github.io/react-pokedex/',
   },
 ];

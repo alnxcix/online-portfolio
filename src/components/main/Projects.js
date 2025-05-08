@@ -1,9 +1,9 @@
-import { lazy } from "react";
-import { client_based_projects } from "data/projects_data";
-import { showcase_projects } from "data/projects_data";
+import { lazy } from 'react';
+import { client_based_projects } from 'data/projects_data';
+import { showcase_projects } from 'data/projects_data';
 
-const ProjectsDataComponent = lazy(() =>
-  import("components/dynamic/ProjectsDataComponent")
+const ProjectsDataComponent = lazy(
+  () => import('components/dynamic/ProjectsDataComponent')
 );
 
 const Projects = () => (

@@ -1,14 +1,14 @@
-import { lazy } from "react";
-import { about_links as links } from "data/about_links";
-import { about_main as main } from "data/about_main";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { lazy } from 'react';
+import { about_links as links } from 'data/about_links';
+import { about_main as main } from 'data/about_main';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const DataComponent = lazy(() =>
-  import("components/dynamic/AboutDataComponent")
+const DataComponent = lazy(
+  () => import('components/dynamic/AboutDataComponent')
 );
-const LinkComponent = lazy(() =>
-  import("components/dynamic/AboutLinkComponent")
+const LinkComponent = lazy(
+  () => import('components/dynamic/AboutLinkComponent')
 );
 
 const About = () => (

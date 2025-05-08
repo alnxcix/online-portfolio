@@ -1,27 +1,28 @@
-import { lazy, Suspense, useState } from "react";
-import { faCopyright } from "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ModalImage from "react-modal-image";
-import AvatarLarge from "assets/images/avatar-lg.webp";
-import AvatarSmall from "assets/images/avatar-sm.webp";
+// ** react imports **
+import { Suspense, useState } from 'react';
 
-const About = lazy(() => import("components/main/About"));
-const Education = lazy(() => import("components/main/Education"));
-const Experiences = lazy(() => import("components/main/Experiences"));
-const Projects = lazy(() => import("components/main/Projects"));
-const Skills = lazy(() => import("components/main/Skills"));
+// ** icons **
+import { faCopyright } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+// ** images **
+import ModalImage from 'react-modal-image';
+import AvatarLarge from 'assets/images/avatar-lg.webp';
+import AvatarSmall from 'assets/images/avatar-sm.webp';
+
+// ** custom components **
+import Views from 'components/Views';
+
+// ** enums **
+import ViewsEnums from 'enums/ViewsEnums';
+
+// ======================================= 
 const App = () => {
-  const [activeView, setActiveView] = useState("About");
-  const views = {
-    About: <About />,
-    Education: <Education />,
-    Experiences: <Experiences />,
-    Projects: <Projects />,
-    Skills: <Skills />,
-  };
+  // ** states **
+  const [activeView, setActiveView] = useState<ViewsEnums>(ViewsEnums.ABOUT);
+  
   return (
-    <div className="d-flex flex-column" style={{ minHeight: "100vh" }}>
+    <div className="d-flex flex-column" style={{ minHeight: '100vh' }}>
       {/* main content */}
       <div className="flex-grow-1 container py-5">
         <div className="justify-content-center row">
@@ -45,13 +46,7 @@ const App = () => {
                 {activeView}
               </button>
               <ul className="dropdown-menu">
-                {[
-                  "About",
-                  "Education",
-                  "Experiences",
-                  "Projects",
-                  "Skills",
-                ].map((e, i) => (
+                {Object.values(ViewsEnums).map((e, i) => (
                   <li key={i}>
                     <button
                       className="dropdown-item"
@@ -65,19 +60,17 @@ const App = () => {
             </div>
             {/* on larger screens */}
             <div className="mb-3 d-none d-lg-block">
-              {["About", "Education", "Experiences", "Projects", "Skills"].map(
-                (e, i) => (
-                  <button
-                    className={`btn btn-default rounded-pill me-1 px-3 shadow-none ${
-                      activeView === e ? "btn-active" : null
-                    }`}
-                    key={i}
-                    onClick={() => setActiveView(e)}
-                  >
-                    {e}
-                  </button>
-                )
-              )}
+              {Object.values(ViewsEnums).map((e, i) => (
+                <button
+                  className={`btn btn-default rounded-pill me-1 px-3 shadow-none ${
+                    activeView === e ? 'btn-active' : null
+                  }`}
+                  key={i}
+                  onClick={() => setActiveView(e)}
+                >
+                  {e}
+                </button>
+              ))}
             </div>
             <div className="card rounded-3 w-100">
               <div className="card-body">
@@ -88,7 +81,7 @@ const App = () => {
                     </div>
                   }
                 >
-                  {views[activeView]}
+                  {Views[activeView]}
                 </Suspense>
               </div>
             </div>

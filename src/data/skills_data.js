@@ -1,61 +1,61 @@
 export const skills_high = [
   {
-    label: "React",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    label: 'React',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
   },
   {
-    label: "HTML",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    label: 'HTML',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
   },
   {
-    label: "CSS",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    label: 'CSS',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
   },
   {
-    label: "JavaScript",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    label: 'JavaScript',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
   },
   {
-    label: "TypeScript",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    label: 'TypeScript',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
   },
   {
-    label: "Bootstrap",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+    label: 'Bootstrap',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
   },
   {
-    label: "Ant Design",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/antdesign/antdesign-original.svg",
+    label: 'Ant Design',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/antdesign/antdesign-original.svg',
   },
   {
-    label: "Git",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    label: 'Git',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
   },
 ];
 export const skills_medium = [
   {
-    label: "Node",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    label: 'Node',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
   },
   {
-    label: "MongoDB",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    label: 'MongoDB',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
   },
   {
-    label: "Next",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    label: 'Next',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
   },
   {
-    label: "Cypress",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-original.svg",
+    label: 'Cypress',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-original.svg',
   },
   // {
   //   label: "Figma",
   //   logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   // },
   {
-    label: "Amazon Web Services (AWS)",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+    label: 'Amazon Web Services (AWS)',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg',
   },
   // {
   //   label: "Postman",
