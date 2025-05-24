@@ -1,7 +1,9 @@
 import {
   faGithub,
   faInstagram,
+  faLetterboxd,
   faLinkedin,
+  faSpotify,
   faXTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 
@@ -26,4 +28,15 @@ export const about_links = [
     title: 'Instagram',
     value: 'https://www.instagram.com/kabadoventi',
   },
+  {
+    icon: faLetterboxd,
+    title: 'Letterboxd',
+    value: 'https://letterboxd.com/filipinx'
+  },
+  {
+    icon: faSpotify,
+    title: 'Spotify',
+    value: 'https://open.spotify.com/user/alnxcix'
+  }
+
 ];

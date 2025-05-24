@@ -10,7 +10,6 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // ** lazy load custom components **
-// ** lazy load custom components **
 const DataComponent = lazy(() =>
   import('components').then((m) => ({ default: m.AboutDataComponent }))
 );
@@ -26,18 +25,19 @@ const About = () => (
       <div>
         <h2 className="fw-bold gradient">Hello there!</h2>
         <p>
-          I'm <strong className="gradient">Roy Allen Nidoy</strong>, a software
+          I'm <strong className="gradient">Allen Nidoy</strong>, a software
           engineer based in Manila, Philippines. I mostly do Frontend stuff
           using React, so if you need help with that, you can contact me and we
           can discuss it.
         </p>
         <p>
           Outside of coding, I entertain myself by taking walks outside, going
-          to cafés, playing video games, reading fiction novels, or watching
+          to cafés, taking outfit photos, playing video games, reading fiction novels, or watching
           films.
         </p>
+        <p>Thanks for dropping by!</p>
         <hr />
-        <div className="row row-cols-1 row-cols-lg-2 g-3">
+        <div className="row row-cols-2 row-cols-lg-3 g-3">
           {main.map((e, i) => (
             <DataComponent data={e} key={i} />
           ))}
@@ -47,7 +47,7 @@ const About = () => (
           <p>
             <FontAwesomeIcon icon={faLink} /> Also, check out my other links:
           </p>
-          <div className="row row-cols-2 g-3">
+          <div className="row row-cols-2 row-cols-lg-3 g-3">
             {links.map((e, i) => (
               <LinkComponent data={e} key={i} />
             ))}
