@@ -6,7 +6,7 @@ import type { IconProp } from '@fortawesome/fontawesome-svg-core';
 type AboutLinkComponentPropType = {
   data: {
     icon: IconProp;
-    title: string;
+    title?: string;
     value: string;
   };
 };
@@ -21,7 +21,7 @@ const AboutLinkComponent = ({ data }: AboutLinkComponentPropType) => (
       target="_blank"
       rel="noreferrer"
     >
-      <FontAwesomeIcon icon={data.icon} /> {data.title}
+      <FontAwesomeIcon icon={data.icon} /> {data?.title}
     </a>
   </div>
 );

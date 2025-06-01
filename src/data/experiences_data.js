@@ -11,7 +11,7 @@ export const experiences_data = [
     location: 'Quezon City, Metro Manila, Philippines',
     website: 'https://www.oboda.ai/',
     position: 'Software Engineer',
-    tags: ['React', 'Next', 'TypeScript', 'Material', 'Supply Chain'],
+    tags: ['React', 'Next', 'Prisma', 'TypeScript', 'Material', 'Supply Chain'],
   },
   {
     logo: gappify,
@@ -39,7 +39,7 @@ export const experiences_data = [
       'TanStack Query',
       'Zustand',
       'PHP',
-      "Laravel",
+      'Laravel',
       'Accounting',
     ],
   },

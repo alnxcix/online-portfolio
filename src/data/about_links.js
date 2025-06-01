@@ -20,7 +20,7 @@ export const about_links = [
   },
   {
     icon: faXTwitter,
-    title: 'Twitter',
+    title: undefined,
     value: 'https://x.com/kabadoventi',
   },
   {
@@ -31,12 +31,11 @@ export const about_links = [
   {
     icon: faLetterboxd,
     title: 'Letterboxd',
-    value: 'https://letterboxd.com/filipinx'
+    value: 'https://letterboxd.com/filipinx',
   },
   {
     icon: faSpotify,
     title: 'Spotify',
-    value: 'https://open.spotify.com/user/alnxcix'
-  }
-
+    value: 'https://open.spotify.com/user/alnxcix',
+  },
 ];

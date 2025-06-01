@@ -49,12 +49,6 @@ export const skills_medium = [
     label: 'Next',
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
   },
-
-  {
-    label: 'Cypress',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-original.svg',
-  },
-
   {
     label: 'Nest',
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg',
@@ -62,6 +56,10 @@ export const skills_medium = [
   {
     label: 'Supabase',
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg',
+  },
+  {
+    label: 'Cypress',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-original.svg',
   },
 ];
 export const skills_low = [

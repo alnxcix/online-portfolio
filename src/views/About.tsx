@@ -32,8 +32,8 @@ const About = () => (
         </p>
         <p>
           Outside of coding, I entertain myself by taking walks outside, going
-          to cafés, taking outfit photos, playing video games, reading fiction novels, or watching
-          films.
+          to cafés, taking outfit photos, playing video games, reading fiction
+          novels, or watching films.
         </p>
         <p>Thanks for dropping by!</p>
         <hr />
