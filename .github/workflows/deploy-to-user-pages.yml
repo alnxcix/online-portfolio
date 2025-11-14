@@ -33,7 +33,7 @@ jobs:
           CI: false
 
       - name: Deploy to github.io repo
-        uses: JamesIves/github-pages-deploy-action@v4.4.5
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build
           repository-name: alnxcix/alnxcix.github.io
