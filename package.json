@@ -26,7 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write .",
-    "deploy": "gh workflow run 'Build and Deploy to User Pages' --repo alnxcix/online-portfolio"
+    "deploy": "git push origin main"
   },
   "eslintConfig": {
     "extends": [
