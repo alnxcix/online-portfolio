@@ -3,7 +3,7 @@ name: Build and Deploy to User Pages
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch: {}
 
 permissions:
@@ -35,8 +35,8 @@ jobs:
       - name: Deploy to github.io repo
         uses: JamesIves/github-pages-deploy-action@v4.4.5
         with:
-          folder: build                          # <- change if your build outputs to `dist` or `out`
+          folder: build
           repository-name: alnxcix/alnxcix.github.io
-          destination-branch: main               # branch inside target repo that will receive the files
+          destination-branch: main
           commit-message: "chore: publish site from online-portfolio"
           token: ${{ secrets.DEPLOY_TOKEN }}
