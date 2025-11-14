@@ -1,0 +1,42 @@
+name: Build and Deploy to User Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          CI: false
+
+      - name: Deploy to github.io repo
+        uses: JamesIves/github-pages-deploy-action@v4.4.5
+        with:
+          folder: build                          # <- change if your build outputs to `dist` or `out`
+          repository-name: alnxcix/alnxcix.github.io
+          destination-branch: main               # branch inside target repo that will receive the files
+          commit-message: "chore: publish site from online-portfolio"
+          token: ${{ secrets.DEPLOY_TOKEN }}
