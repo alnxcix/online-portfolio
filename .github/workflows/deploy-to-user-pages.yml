@@ -38,5 +38,6 @@ jobs:
           folder: build
           repository-name: alnxcix/alnxcix.github.io
           destination-branch: main
+          branch: main
           commit-message: "chore: publish site from online-portfolio"
           token: ${{ secrets.DEPLOY_TOKEN }}
